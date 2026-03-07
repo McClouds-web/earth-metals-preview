@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Metals Website Blueprint — TapxMedia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --green: #41A648;
+            --green-dark: #2d7a33;
+            --yellow: #FFCD05;
+            --dark: #121212;
+            --gray: #555;
+            --light: #f7f8fa;
+            --border: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2c2c2c;
+            background: #fff;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        /* ── COVER PAGE ── */
+        .cover {
+            background: linear-gradient(135deg, #121212 0%, #1c2b1e 60%, #121212 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 80px;
+            page-break-after: always;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(65, 166, 72, 0.06);
+        }
+
+        .cover::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: 200px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(255, 205, 5, 0.04);
+        }
+
+        .cover-badge {
+            display: inline-block;
+            background: rgba(65, 166, 72, 0.18);
+            color: var(--green);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: 100px;
+            margin-bottom: 28px;
+        }
+
+        .cover h1 {
+            font-size: 52px;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 12px;
+            max-width: 700px;
+        }
+
+        .cover h1 span {
+            color: var(--green);
+        }
+
+        .cover .cover-sub {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.55);
+            font-weight: 400;
+            margin-bottom: 48px;
+            max-width: 560px;
+        }
+
+        .cover-meta {
+            display: flex;
+            gap: 40px;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            width: 100%;
+        }
+
+        .cover-meta-item label {
+            display: block;
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 4px;
+        }
+
+        .cover-meta-item strong {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .cover-logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cover-logo-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--green);
+        }
+
+        /* ── PAGE LAYOUT ── */
+        .page {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 60px 60px 40px;
+        }
+
+        /* ── TABLE OF CONTENTS ── */
+        .toc-page {
+            page-break-after: always;
+        }
+
+        .section-label {
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #eee;
+        }
+
+        .toc-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .toc-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px dashed #eee;
+            font-size: 13px;
+        }
+
+        .toc-list li:last-child {
+            border-bottom: none;
+        }
+
+        .toc-list .toc-num {
+            font-weight: 700;
+            color: var(--green);
+            min-width: 30px;
+        }
+
+        .toc-list .toc-title {
+            flex: 1;
+            padding: 0 12px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .toc-list .toc-page-num {
+            color: #aaa;
+            font-size: 11px;
+        }
+
+        .toc-group-heading {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #bbb;
+            padding: 16px 0 6px;
+        }
+
+        /* ── CONTENT SECTIONS ── */
+        .change-block {
+            margin-bottom: 44px;
+            page-break-inside: avoid;
+        }
+
+        .change-block h2 {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .change-block h2 .num {
+            width: 32px;
+            height: 32px;
+            background: var(--green);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .change-block .meta-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            padding: 3px 10px;
+            border-radius: 100px;
+            text-transform: uppercase;
+        }
+
+        .tag-html {
+            background: rgba(65, 166, 72, 0.1);
+            color: var(--green-dark);
+        }
+
+        .tag-css {
+            background: rgba(255, 205, 5, 0.15);
+            color: #9a7c00;
+        }
+
+        .tag-js {
+            background: rgba(0, 100, 200, 0.1);
+            color: #0050b3;
+        }
+
+        .tag-new {
+            background: rgba(65, 166, 72, 0.12);
+            color: var(--green);
+        }
+
+        .tag-update {
+            background: rgba(255, 150, 0, 0.1);
+            color: #b36000;
+        }
+
+        .tag-remove {
+            background: rgba(200, 0, 0, 0.08);
+            color: #900;
+        }
+
+        .change-block p {
+            color: var(--gray);
+            margin-bottom: 10px;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .detail-list {
+            list-style: none;
+            margin: 12px 0;
+        }
+
+        .detail-list li {
+            padding: 7px 0 7px 20px;
+            border-bottom: 1px solid #f5f5f5;
+            color: #444;
+            font-size: 12.5px;
+            position: relative;
+        }
+
+        .detail-list li:last-child {
+            border: none;
+        }
+
+        .detail-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        .code-snippet {
+            background: #1a1a1a;
+            color: #e0e0e0;
+            border-radius: 8px;
+            padding: 16px 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            line-height: 1.6;
+            margin: 14px 0;
+            overflow: hidden;
+        }
+
+        .code-snippet .kw {
+            color: #41A648;
+        }
+
+        .code-snippet .str {
+            color: #FFCD05;
+        }
+
+        .code-snippet .cm {
+            color: #666;
+            font-style: italic;
+        }
+
+        .info-box {
+            background: var(--light);
+            border-left: 4px solid var(--green);
+            border-radius: 0 8px 8px 0;
+            padding: 14px 18px;
+            margin: 14px 0;
+            font-size: 12.5px;
+            color: #444;
+        }
+
+        .info-box strong {
+            color: var(--dark);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 14px 0;
+        }
+
+        .mini-card {
+            background: var(--light);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        .mini-card h4 {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .mini-card p {
+            font-size: 11.5px;
+            color: #666;
+            margin: 0;
+        }
+
+        /* ── DIVIDER ── */
+        .divider {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 36px 0;
+        }
+
+        /* ── PAGE HEADER ── */
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            margin-bottom: 36px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .page-header .ph-left {
+            font-size: 11px;
+            color: #bbb;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .page-header .ph-right {
+            font-size: 11px;
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        /* ── SUMMARY TABLE ── */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 12px;
+        }
+
+        .summary-table th {
+            background: var(--dark);
+            color: #fff;
+            padding: 10px 14px;
+            text-align: left;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .summary-table th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        .summary-table th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        .summary-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #f0f0f0;
+            color: #444;
+            vertical-align: top;
+        }
+
+        .summary-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .summary-table tr:nth-child(even) td {
+            background: var(--light);
+        }
+
+        /* ── PRINT ── */
+        @media print {
+            body {
+                font-size: 12px;
+            }
+
+            .cover {
+                min-height: 100vh;
+            }
+
+            .page {
+                padding: 40px 50px;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+
+            .no-break {
+                page-break-inside: avoid;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        /* ── FOOTER BAR ── */
+        .doc-footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.4);
+            text-align: center;
+            font-size: 10px;
+            padding: 20px;
+            letter-spacing: 1px;
+            margin-top: 60px;
+        }
+
+        .doc-footer span {
+            color: var(--green);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════════════════════
+     COVER PAGE
+══════════════════════════════════════════════════════ -->
+    <div class="cover">
+        <div class="cover-logo">
+            <div class="cover-logo-dot"></div>
+            TapxMedia
+        </div>
+        <div class="cover-badge">Website Development Blueprint</div>
+        <h1>Earth Metals<br><span>Change Documentation</span></h1>
+        <p class="cover-sub">A complete record of every structural, content, and design change made to the Earth Metals
+            website — from footer updates to full section additions.</p>
+        <div class="cover-meta">
+            <div class="cover-meta-item">
+                <label>Project</label>
+                <strong>Earth Metals Website Preview</strong>
+            </div>
+            <div class="cover-meta-item">
+                <label>Date</label>
+                <strong>7 March 2026</strong>
+            </div>
+            <div class="cover-meta-item">
+                <label>Prepared by</label>
+                <strong>TapxMedia / BrandPoint</strong>
+            </div>
+            <div class="cover-meta-item">
+                <label>Total Changes</label>
+                <strong>14 Major Updates</strong>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+     TABLE OF CONTENTS
+══════════════════════════════════════════════════════ -->
+    <div class="page toc-page">
+        <div class="page-header">
+            <span class="ph-left">Earth Metals Blueprint</span>
+            <span class="ph-right">earth-metals.com</span>
+        </div>
+
+        <div class="section-label">Contents</div>
+        <h2 style="font-size:26px; font-weight:800; margin-bottom:6px;">Table of Contents</h2>
+        <p style="color:#888; margin-bottom:28px;">All changes are documented in the order they were implemented.</p>
+
+        <ul class="toc-list">
+            <div class="toc-group-heading">Foundation Changes</div>
+            <li><span class="toc-num">01</span><span class="toc-title">Page Title &amp; Branding Update</span><span
+                    class="toc-page-num">HTML</span></li>
+            <li><span class="toc-num">02</span><span class="toc-title">Footer Restructure — Regional Offices</span><span
+                    class="toc-page-num">HTML / CSS</span></li>
+            <li><span class="toc-num">03</span><span class="toc-title">Footer Applied to Login &amp; Index
+                    Pages</span><span class="toc-page-num">HTML</span></li>
+
+            <div class="toc-group-heading">Contact &amp; Content Changes</div>
+            <li><span class="toc-num">04</span><span class="toc-title">Contact Section — Regional Offices Moved to
+                    Footer</span><span class="toc-page-num">HTML</span></li>
+            <li><span class="toc-num">05</span><span class="toc-title">About Section — Quote Card Removed</span><span
+                    class="toc-page-num">HTML</span></li>
+
+            <div class="toc-group-heading">Design Upgrades</div>
+            <li><span class="toc-num">06</span><span class="toc-title">Process Steps — Upgraded to Premium
+                    Cards</span><span class="toc-page-num">HTML / CSS</span></li>
+            <li><span class="toc-num">07</span><span class="toc-title">Section Titles — Green Underline
+                    Removed</span><span class="toc-page-num">CSS</span></li>
+
+            <div class="toc-group-heading">New Sections Added</div>
+            <li><span class="toc-num">08</span><span class="toc-title">Stats / Social Proof Bar</span><span
+                    class="toc-page-num">HTML / CSS / JS</span></li>
+            <li><span class="toc-num">09</span><span class="toc-title">Mid-Page CTA Banner</span><span
+                    class="toc-page-num">HTML / CSS</span></li>
+            <li><span class="toc-num">10</span><span class="toc-title">Featured Auctions Preview</span><span
+                    class="toc-page-num">HTML / CSS / JS</span></li>
+            <li><span class="toc-num">11</span><span class="toc-title">Platform Dashboard Preview</span><span
+                    class="toc-page-num">HTML / CSS</span></li>
+            <li><span class="toc-num">12</span><span class="toc-title">Testimonials + Trusted By Partners</span><span
+                    class="toc-page-num">HTML / CSS</span></li>
+            <li><span class="toc-num">13</span><span class="toc-title">FAQ Accordion</span><span
+                    class="toc-page-num">HTML / CSS / JS</span></li>
+            <li><span class="toc-num">14</span><span class="toc-title">Newsletter Signup + Coming Soon (Mobile
+                    App)</span><span class="toc-page-num">HTML / CSS / JS</span></li>
+        </ul>
+
+        <hr class="divider">
+
+        <div class="section-label">Files Modified</div>
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>File</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>index.html</code></td>
+                    <td>HTML</td>
+                    <td>Primary homepage — all section changes</td>
+                </tr>
+                <tr>
+                    <td><code>site/index</code></td>
+                    <td>HTML</td>
+                    <td>Site index page — footer updated</td>
+                </tr>
+                <tr>
+                    <td><code>site/login</code></td>
+                    <td>HTML</td>
+                    <td>Login page — footer + title updated</td>
+                </tr>
+                <tr>
+                    <td><code>themes/oxygen/css/main.css</code></td>
+                    <td>CSS</td>
+                    <td>All new component styles appended</td>
+                </tr>
+                <tr>
+                    <td><code>script.js</code></td>
+                    <td>JavaScript</td>
+                    <td>Stat counters, timers, FAQ accordion</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+     CHANGES 01–04
+══════════════════════════════════════════════════════ -->
+    <div class="page page-break">
+        <div class="page-header">
+            <span class="ph-left">Foundation Changes</span>
+            <span class="ph-right">earth-metals.com</span>
+        </div>
+
+        <!-- 01 -->
+        <div class="change-block no-break">
+            <h2><span class="num">01</span> Page Title &amp; Branding Update</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-update">Update</span>
+            </div>
+            <p>The document <code>&lt;title&gt;</code> tag across all pages was updated from the old brand name "Oxygen
+                Capital" to "Earth Metals" with a descriptive subtitle for SEO purposes.</p>
+            <ul class="detail-list">
+                <li><strong>Before:</strong> <code>&lt;title&gt;Oxygen Capital&lt;/title&gt;</code></li>
+                <li><strong>After:</strong>
+                    <code>&lt;title&gt;Earth Metals: Specialist Marketplace for Heavy Assets&lt;/title&gt;</code>
+                </li>
+                <li>Applied to: <code>index.html</code>, <code>site/index</code>, <code>site/login</code></li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 02 -->
+        <div class="change-block no-break">
+            <h2><span class="num">02</span> Footer Restructure — Regional Offices</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-update">Update</span>
+            </div>
+            <p>The footer was completely redesigned from a simple 2-column layout into a rich 3-column responsive grid.
+                The old footer had a tagline and navigation only. The new footer includes the Earth Metals logo,
+                tagline, quick links, and full regional office contact details.</p>
+
+            <div class="two-col">
+                <div class="mini-card">
+                    <h4 style="color:#900;">❌ Old Footer</h4>
+                    <p>Logo + old tagline ("Source used-car stock..."), horizontal nav links, Login button, copyright "©
+                        2026 Oxygen Capital."</p>
+                </div>
+                <div class="mini-card">
+                    <h4 style="color:var(--green);">✓ New Footer</h4>
+                    <p>Logo + new tagline, Quick Links column, Connect with Our Regional Offices column (SA + ZW),
+                        updated copyright "© 2026 Earth Metals."</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <strong>Regional Office Details Added</strong>
+                <strong>South Africa:</strong> Unit 1, 1st Floor, 187 Witch-Hazel Ave, Highveld, Centurion, 0157 | +27
+                10 593 4591 | office@earth-metals.com<br><br>
+                <strong>Zimbabwe:</strong> 16 Woodholme Road, Emerald Hill, Harare | +263 77 221 0000 |
+                zim@earth-metals.com
+            </div>
+
+            <ul class="detail-list">
+                <li>Bootstrap 5 grid (<code>col-lg-4 / col-lg-2 / col-lg-6</code>) used for responsive 3-column layout
+                </li>
+                <li>SA office heading colour: <code>#41A648</code> (green)</li>
+                <li>Zimbabwe office heading colour: <code>#FFCD05</code> (yellow)</li>
+                <li>HR divider opacity reduced to <code>0.1</code> for subtlety</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 03 -->
+        <div class="change-block no-break">
+            <h2><span class="num">03</span> Footer Applied to Login &amp; Site Index Pages</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-update">Update</span>
+            </div>
+            <p>The new footer structure was replicated consistently across the login page (<code>site/login</code>) and
+                site index page (<code>site/index</code>) to ensure brand consistency throughout the platform.</p>
+            <ul class="detail-list">
+                <li>Login page title updated: <code>Earth Metals | Login</code></li>
+                <li>All three pages now share identical footer markup and branding</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+     CHANGES 04–07
+══════════════════════════════════════════════════════ -->
+    <div class="page page-break">
+        <div class="page-header">
+            <span class="ph-left">Content &amp; Design Changes</span>
+            <span class="ph-right">earth-metals.com</span>
+        </div>
+
+        <!-- 04 -->
+        <div class="change-block no-break">
+            <h2><span class="num">04</span> Contact Section — Regional Offices Moved to Footer</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-remove">Remove</span>
+            </div>
+            <p>The "Connect with Our Regional Offices" heading, description text, and the South Africa / Zimbabwe office
+                cards were removed from the <code>#contactus</code> section body. The contact section form was preserved
+                completely. The heading was reverted to the previously established copy:</p>
+            <ul class="detail-list">
+                <li>New heading: <strong>"Initiate Your Project"</strong></li>
+                <li>New description: <em>"Submit project details and receive a response within 24 hours to begin
+                        building tailored growth solutions."</em></li>
+                <li>Regional office data lives exclusively in the footer — visible on every page</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 05 -->
+        <div class="change-block no-break">
+            <h2><span class="num">05</span> About Section — Quote Card Removed</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-remove">Remove</span>
+            </div>
+            <p>A white quote card overlay ("Our mission is to bring transparency...") that was positioned over the
+                mining_hauler.png image was removed. The image now fills the left column cleanly without any overlay
+                element.</p>
+            <ul class="detail-list">
+                <li>Image: <code>/themes/oxygen/images/mining_hauler.png</code> — unchanged</li>
+                <li>All right-column text content (heading, subheading, 2 paragraphs, button) preserved as-is</li>
+                <li>Button now links to <code>#contactus</code> instead of <code>/site/register</code></li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 06 -->
+        <div class="change-block no-break">
+            <h2><span class="num">06</span> Process Steps — Upgraded to Premium Cards</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-update">Update</span>
+            </div>
+            <p>The plain border-top step divs in the "How It Works" section were replaced with styled card components.
+                Both the Sellers and Buyers process rows were upgraded.</p>
+
+            <div class="two-col">
+                <div class="mini-card">
+                    <h4>Card Features</h4>
+                    <p>Step number badge (circular), Iconify icon, title, description, white background, rounded
+                        corners, drop shadow, hover lift animation</p>
+                </div>
+                <div class="mini-card">
+                    <h4>Colour Coding</h4>
+                    <p><strong style="color:var(--green);">Sellers:</strong> Green (#41A648) top border +
+                        badges<br><strong style="color:#b8960a;">Buyers:</strong> Yellow (#FFCD05) top border + badges
+                        with dark text</p>
+                </div>
+            </div>
+
+            <ul class="detail-list">
+                <li>CSS classes added: <code>.process-card</code>, <code>.process-card--seller</code>,
+                    <code>.process-card--buyer</code>, <code>.process-card__step</code>,
+                    <code>.process-card__icon</code>, <code>.process-card__title</code>,
+                    <code>.process-card__desc</code>
+                </li>
+                <li>Hover: <code>translateY(-8px)</code> with deepened box-shadow</li>
+                <li>Section headers upgraded with Iconify icon + coloured text</li>
+                <li>Seller icons: account-check, clipboard-list, gavel, hand-coin</li>
+                <li>Buyer icons: account-check, magnify, podium, truck-delivery</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 07 -->
+        <div class="change-block no-break">
+            <h2><span class="num">07</span> Section Titles — Green Underline Removed</h2>
+            <div class="meta-row">
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-remove">Remove</span>
+            </div>
+            <p>The green <code>border-bottom: 3px solid #41A648</code> decoration from the <code>.underlined</code> span
+                inside <code>.sub_head_title</code> was removed. Section headings across the site are now clean without
+                the underline accent.</p>
+            <ul class="detail-list">
+                <li>File: <code>themes/oxygen/css/main.css</code> — line ~2785</li>
+                <li>The <code>.sub_head_title .underlined</code> ruleset was cleared entirely</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+     NEW SECTIONS 08–11
+══════════════════════════════════════════════════════ -->
+    <div class="page page-break">
+        <div class="page-header">
+            <span class="ph-left">New Sections Added</span>
+            <span class="ph-right">earth-metals.com</span>
+        </div>
+
+        <!-- 08 -->
+        <div class="change-block no-break">
+            <h2><span class="num">08</span> Stats / Social Proof Bar</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-js">JS</span>
+                <span class="tag tag-new">New</span>
+            </div>
+            <p>A dark (#121212) stats strip was added immediately after the sub-hero feature boxes section. It displays
+                four key credibility metrics that animate up from zero when scrolled into view.</p>
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Stat</th>
+                        <th>Value</th>
+                        <th>Label</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Assets Sold</td>
+                        <td>500+</td>
+                        <td>data-target="500"</td>
+                    </tr>
+                    <tr>
+                        <td>Registered Buyers</td>
+                        <td>1,200+</td>
+                        <td>data-target="1200"</td>
+                    </tr>
+                    <tr>
+                        <td>Countries Served</td>
+                        <td>6</td>
+                        <td>data-target="6"</td>
+                    </tr>
+                    <tr>
+                        <td>Rands in Transactions</td>
+                        <td>R2B+</td>
+                        <td>data-target="2"</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul class="detail-list">
+                <li>JS: IntersectionObserver fires <code>animateCounter()</code> on scroll (threshold: 0.5)</li>
+                <li>Animation duration: 1800ms, 60fps step increments</li>
+                <li>CSS classes: <code>.stat-item</code>, <code>.stat-number</code>, <code>.stat-suffix</code>,
+                    <code>.stat-label</code>
+                </li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 09 -->
+        <div class="change-block no-break">
+            <h2><span class="num">09</span> Mid-Page CTA Banner</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-new">New</span>
+            </div>
+            <p>A full-width green gradient banner was inserted between the Industries Served and Why Choose Earth Metals
+                sections. It contains a heading, description, and a yellow call-to-action button.</p>
+            <ul class="detail-list">
+                <li>Background: <code>linear-gradient(135deg, #41A648, #2d7a33)</code></li>
+                <li>Heading: <em>"Ready to List Your Fleet?"</em></li>
+                <li>Button: <em>"Register Now — It's Free"</em> — yellow (#FFCD05) with dark text, links to
+                    <code>/site/register</code>
+                </li>
+                <li>Responsive: stacks vertically on mobile using Bootstrap col-lg-8 / col-lg-4</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 10 -->
+        <div class="change-block no-break">
+            <h2><span class="num">10</span> Featured Auctions Preview</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-js">JS</span>
+                <span class="tag tag-new">New</span>
+            </div>
+            <p>Three illustrative auction cards were added after the Why Choose section to demonstrate the types of
+                assets available on the platform. Each card shows a status badge, asset name, condition, location,
+                current bid, and a live countdown timer.</p>
+
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Status</th>
+                        <th>Bid</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2019 Volvo FH 540 Prime Mover</td>
+                        <td>🟢 Live</td>
+                        <td>R 1,250,000</td>
+                        <td>Gauteng, ZA</td>
+                    </tr>
+                    <tr>
+                        <td>2020 CAT 320 Excavator</td>
+                        <td>🟢 Live</td>
+                        <td>R 2,800,000</td>
+                        <td>Harare, ZW</td>
+                    </tr>
+                    <tr>
+                        <td>2018 Henred Fruehauf Triaxle Tanker</td>
+                        <td>🟡 Upcoming</td>
+                        <td>R 680,000</td>
+                        <td>Cape Town, ZA</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <ul class="detail-list">
+                <li>JS countdown timers update every second via <code>setInterval(updateTimers, 1000)</code></li>
+                <li>Iconify icons used for asset imagery inside dark gradient placeholder</li>
+                <li>Footnote: <em>"* Sample listings for illustration. Register to view and bid on real assets."</em>
+                </li>
+                <li>CSS classes: <code>.auction-card</code>, <code>.auction-card__badge--live</code>,
+                    <code>.auction-card__timer</code>, etc.
+                </li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 11 -->
+        <div class="change-block no-break">
+            <h2><span class="num">11</span> Platform Dashboard Preview</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-new">New</span>
+            </div>
+            <p>A two-column section shows platform benefits (left) alongside a browser-window mockup of the Earth Metals
+                dashboard (right). The mockup uses CSS to simulate a Mac browser chrome with traffic-light buttons, stat
+                widgets, and a bid table.</p>
+            <ul class="detail-list">
+                <li>Feature checklist: 4 platform capabilities with green check icons</li>
+                <li>Mockup: <code>.platform-preview-box</code> with browser bar (red/yellow/green dots)</li>
+                <li>Dashboard widgets: Live Auctions (23), My Bids (8), Won (4)</li>
+                <li>Bid table rows: Volvo, CAT 320, Fruehauf Tanker, Bell B30E ADT</li>
+                <li>Status badges: <code>.badge-live</code>, <code>.badge-upcoming</code>, <code>.badge-won</code></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+     NEW SECTIONS 12–14
+══════════════════════════════════════════════════════ -->
+    <div class="page page-break">
+        <div class="page-header">
+            <span class="ph-left">New Sections — Continued</span>
+            <span class="ph-right">earth-metals.com</span>
+        </div>
+
+        <!-- 12 -->
+        <div class="change-block no-break">
+            <h2><span class="num">12</span> Testimonials + Trusted By Partners</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-new">New</span>
+            </div>
+            <p>Two sections were added after the How It Works section. The Testimonials section uses a dark (#121212)
+                background with glass-style cards. The Partners row shows sector badges on a light grey background
+                strip.</p>
+
+            <div class="two-col">
+                <div class="mini-card">
+                    <h4>Testimonials (3 Cards)</h4>
+                    <p><strong>N. Moyo</strong> — Fleet Director, Mining · ZW<br><strong>T. Khumalo</strong> —
+                        Procurement Mgr, Logistics · SA<br><strong>S. Roos</strong> — Asset Finance Executive · SA</p>
+                </div>
+                <div class="mini-card">
+                    <h4>Trusted Sectors (6 Badges)</h4>
+                    <p>Mining &amp; Resources, Construction, Logistics &amp; Transport, Agriculture, Financial
+                        Institutions, Fleet Dealers</p>
+                </div>
+            </div>
+
+            <ul class="detail-list">
+                <li>Testimonial cards: <code>rgba(255,255,255,0.05)</code> background, hover border turns green</li>
+                <li>Avatar initials: circular green badge (NM, TK, SR)</li>
+                <li>Partner badges: pill-shaped, hover changes to green border + text</li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 13 -->
+        <div class="change-block no-break">
+            <h2><span class="num">13</span> FAQ Accordion</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-js">JS</span>
+                <span class="tag tag-new">New</span>
+            </div>
+            <p>A Frequently Asked Questions section was added with 6 accordion items and a supplemental "Still have
+                questions?" contact card on the right side.</p>
+
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Question</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>How long does an auction run?</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>How are assets inspected before listing?</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>What countries do you operate in?</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Is Earth Metals open to individual sellers?</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>How are payments handled?</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>How do I register?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <ul class="detail-list">
+                <li>JS: <code>toggleFaq(btn)</code> — closes all other items before opening clicked one</li>
+                <li>CSS transition: <code>max-height: 0 → 300px</code> for smooth expand/collapse</li>
+                <li>Chevron icon rotates 180° when item is open using <code>.faq-item.open .faq-icon</code></li>
+                <li>Right card: headset icon, "Still have questions?" CTA linking to <code>#contactus</code></li>
+            </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- 14 -->
+        <div class="change-block no-break">
+            <h2><span class="num">14</span> Newsletter Signup + Coming Soon (Mobile App)</h2>
+            <div class="meta-row">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-new">New</span>
+            </div>
+            <p>Two final sections were added before the Contact section.</p>
+
+            <div class="two-col">
+                <div class="mini-card">
+                    <h4>Newsletter Signup</h4>
+                    <p>Dark gradient section. Bell icon in yellow. Email capture pill input + "Notify Me" button. Note:
+                        "No spam. Unsubscribe anytime. B2B only."</p>
+                </div>
+                <div class="mini-card">
+                    <h4>Coming Soon — Mobile App</h4>
+                    <p>Green gradient section. "Coming Soon" pill badge. App feature pills (Live Alerts, Bidding,
+                        Reports, Tracking). CSS phone mockup with two auction listing cards.</p>
+                </div>
+            </div>
+
+            <ul class="detail-list">
+                <li>Newsletter form: pill-shaped row (<code>.newsletter-form__row</code>), transparent input, green
+                    submit button</li>
+                <li>Coming Soon badge: yellow translucent pill with "COMING SOON" text</li>
+                <li>Feature pills: <code>.coming-soon-feature</code> — white semi-transparent, border, flex row</li>
+                <li>Phone mockup: <code>.app-mockup__phone</code> — dark rounded rectangle with screen, header, 2 cards
+                    inside</li>
+                <li>Early access email form also included in Coming Soon section</li>
+                <li>Decorative circles: absolute-positioned blurred blobs for depth</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+     JAVASCRIPT SUMMARY
+══════════════════════════════════════════════════════ -->
+    <div class="page page-break">
+        <div class="page-header">
+            <span class="ph-left">JavaScript Implementation</span>
+            <span class="ph-right">script.js</span>
+        </div>
+
+        <div class="section-label">script.js — New Functions</div>
+        <h2 style="font-size:22px; font-weight:800; margin-bottom:16px;">JavaScript Added</h2>
+
+        <div class="change-block no-break">
+            <h2 style="font-size:16px;"><span class="num" style="width:28px;height:28px;font-size:11px;">A</span> Stat
+                Counter Animation</h2>
+            <p>Uses <code>IntersectionObserver</code> (threshold: 0.5) to detect when stat numbers enter the viewport,
+                then fires a smooth count-up animation from 0 to the target value over ~1800ms at 60fps.</p>
+            <div class="code-snippet">
+                <span class="cm">// Fires when .stat-number scrolls into view</span>
+                <span class="kw">function</span> animateCounter(el) {
+                <span class="kw">const</span> target = parseInt(el.getAttribute(<span class="str">'data-target'</span>),
+                10);
+                <span class="kw">const</span> step = Math.ceil(target / (1800 / 16));
+                <span class="kw">let</span> current = 0;
+                <span class="kw">const</span> timer = setInterval(() => {
+                current += step;
+                <span class="kw">if</span> (current >= target) { current = target; clearInterval(timer); }
+                el.textContent = current.toLocaleString();
+                }, 16);
+                }
+            </div>
+        </div>
+
+        <div class="change-block no-break">
+            <h2 style="font-size:16px;"><span class="num" style="width:28px;height:28px;font-size:11px;">B</span>
+                Auction Countdown Timers</h2>
+            <p>Reads <code>data-end</code> attribute (ISO date string) from each <code>.auction-card__timer</code>
+                element and calculates a live countdown, updating every second via <code>setInterval</code>.</p>
+            <div class="code-snippet">
+                <span class="cm">// Updates every .auction-card__timer element every 1 second</span>
+                <span class="kw">function</span> getCountdownString(endDateStr) {
+                <span class="kw">const</span> diff = <span class="kw">new</span> Date(endDateStr) - <span
+                    class="kw">new</span> Date();
+                <span class="kw">if</span> (diff <= 0) <span class="kw">return</span> <span class="str">'Ended'</span>;
+                    <span class="kw">const</span> d = Math.floor(diff / 86400000);
+                    <span class="kw">return</span> d > 0 ? <span class="str">`${d}d ${h}h ${m}m`</span> : <span
+                        class="str">`${h}h ${m}m ${s}s`</span>;
+                    }
+                    setInterval(updateTimers, 1000);
+            </div>
+        </div>
+
+        <div class="change-block no-break">
+            <h2 style="font-size:16px;"><span class="num" style="width:28px;height:28px;font-size:11px;">C</span> FAQ
+                Accordion Toggle</h2>
+            <p>Global function (called inline via <code>onclick="toggleFaq(this)"</code>) that closes all open FAQ
+                items, then opens the target item if it was previously closed. Creates an exclusive single-open
+                accordion.</p>
+            <div class="code-snippet">
+                <span class="kw">function</span> toggleFaq(btn) {
+                <span class="kw">const</span> item = btn.closest(<span class="str">'.faq-item'</span>);
+                <span class="kw">const</span> isOpen = item.classList.contains(<span class="str">'open'</span>);
+                document.querySelectorAll(<span class="str">'.faq-item.open'</span>)
+                .forEach(i => i.classList.remove(<span class="str">'open'</span>));
+                <span class="kw">if</span> (!isOpen) item.classList.add(<span class="str">'open'</span>);
+                }
+            </div>
+        </div>
+
+        <hr class="divider">
+        <div class="info-box">
+            <strong>script.js linked in index.html</strong>
+            <code>&lt;script src="/script.js" defer&gt;&lt;/script&gt;</code> added before <code>&lt;/body&gt;</code> to
+            ensure all DOM elements are ready before the script runs.
+        </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+     PAGE ORDER SUMMARY
+══════════════════════════════════════════════════════ -->
+    <div class="page page-break">
+        <div class="page-header">
+            <span class="ph-left">Final Page Structure</span>
+            <span class="ph-right">earth-metals.com</span>
+        </div>
+
+        <div class="section-label">Current Section Order</div>
+        <h2 style="font-size:22px; font-weight:800; margin-bottom:16px;">Full Page Flow</h2>
+        <p style="color:#888; margin-bottom:24px;">The homepage now contains the following sections in this order:</p>
+
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Section</th>
+                    <th>ID / Anchor</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sticky Navigation</td>
+                    <td>—</td>
+                    <td>Existing</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Hero Banner</td>
+                    <td>#home</td>
+                    <td>Existing</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sub-hero Feature Boxes</td>
+                    <td>—</td>
+                    <td>Existing</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>📊 Stats / Social Proof Bar</td>
+                    <td>—</td>
+                    <td><strong style="color:var(--green);">NEW</strong></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>About Earth Metals</td>
+                    <td>#aboutus</td>
+                    <td>Updated</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Services — For Sellers &amp; Buyers</td>
+                    <td>#services</td>
+                    <td>Existing</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Industries Served</td>
+                    <td>#industries</td>
+                    <td>Existing</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>🚀 Mid-Page CTA Banner</td>
+                    <td>—</td>
+                    <td><strong style="color:var(--green);">NEW</strong></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Why Choose Earth Metals</td>
+                    <td>—</td>
+                    <td>Existing</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>🏷️ Featured Auctions Preview</td>
+                    <td>—</td>
+                    <td><strong style="color:var(--green);">NEW</strong></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>💻 Platform Dashboard Preview</td>
+                    <td>—</td>
+                    <td><strong style="color:var(--green);">NEW</strong></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>How It Works (Process Cards)</td>
+                    <td>—</td>
+                    <td>Updated</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>💬 Testimonials</td>
+                    <td>—</td>
+                    <td><strong style="color:var(--green);">NEW</strong></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>🤝 Trusted By / Partners</td>
+                    <td>—</td>
+                    <td><strong style="color:var(--green);">NEW</strong></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>❓ FAQ Accordion</td>
+                    <td>—</td>
+                    <td><strong style="color:var(--green);">NEW</strong></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>📧 Newsletter Signup</td>
+                    <td>—</td>
+                    <td><strong style="color:var(--green);">NEW</strong></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>📱 Coming Soon — Mobile App</td>
+                    <td>—</td>
+                    <td><strong style="color:var(--green);">NEW</strong></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Contact Us</td>
+                    <td>#contactus</td>
+                    <td>Updated</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Footer (Multi-column + Offices)</td>
+                    <td>—</td>
+                    <td>Updated</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="divider">
+
+        <div class="info-box">
+            <strong>Next Steps / Recommendations</strong>
+            Replace sample auction card data with live database-driven listings when the backend is connected. The
+            newsletter and "Notify Me" forms currently use <code>onsubmit="return false"</code> — wire these to an email
+            service (e.g. Mailchimp, SendGrid) when ready. The Coming Soon mobile app section can be updated or removed
+            once the app launches.
+        </div>
+    </div>
+
+
+    <div class="doc-footer">
+        Prepared by <span>TapxMedia</span> &nbsp;·&nbsp; Earth Metals Website Blueprint &nbsp;·&nbsp; March 2026
+        &nbsp;·&nbsp; <span>earth-metals.com</span>
+    </div>
+
+</body>
+
+</html>

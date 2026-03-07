@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><!--suppress ALL -->
+<html lang="en"> <!--<![endif]-->
+<head class="no-js">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" href="/themes/oxygen/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <!-- Jquery --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap 5 --->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+
+
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <!-- Vue -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.5/vue.global.js"></script>
+
+    <!-- Recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!-- Scroll Magic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+
+    <link rel="stylesheet" href="/themes/oxygen/css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="/themes/oxygen/bootstrap/js/scrollmagicanimations.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+
+            $(".navbar-toggler").click(function () {
+                $(".navbar-collapse").toggleClass("show_menu");
+            });
+
+        });
+
+    </script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="/assets/7afa4ec1/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/assets/7afa4ec1/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/assets/7afa4ec1/css/bootstrap-yii.css" />
+<link rel="stylesheet" type="text/css" href="/assets/7afa4ec1/css/jquery-ui-bootstrap.css" />
+<script type="text/javascript" src="/assets/927c8076/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/7afa4ec1/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/7afa4ec1/js/bootstrap-noconflict.js"></script>
+<script type="text/javascript" src="/assets/7afa4ec1/bootbox/bootbox.min.js"></script>
+<script type="text/javascript" src="/assets/7afa4ec1/notify/notify.min.js"></script>
+<script type="text/javascript" src="/assets/927c8076/jquery.yiiactiveform.js"></script>
+</head>
+
+<body>
+
+<section class="sticky_header" id="nav_header_block">
+
+<section class="custom_container">
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand d-flex">
+                    <img src="/themes/oxygen/images/logo.png" class="logo_img_header" alt="...">
+            </a>
+                <button class="navbar-toggler x collapsed" type="button" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <div class="navbar-collapse justify-content-between responsive_hidden" id="navbarNavAltMarkup">
+                <div class="navbar-nav" id="navigation_menu">
+                    <a class="nav-link nav_menu"  href="/site/index#home">Home</a>
+                    <a class="nav-link nav_menu" href="/site/index#aboutus">About Us</a>
+                    <a class="nav-link nav_menu" href="/site/index#auction">Auction</a>
+                    <a class="nav-link nav_menu" href="/site/index#contactus">Contact Us</a>
+                </div>
+                <div class="navbar-nav d-flex align-items-center">
+                    <a class="prim_btn" href="/site/login">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+</section>
+</section>
+
+<title>Earth Metals | Login</title>
+
+<section class="pad_top_100 pad_bottom_100 gray_50_bg grouping light_bg neg-110">
+    <form class="form_row pad_top_100 form-vertical" id="login-form" action="/site/login" method="post">    <div class="custom_container max_form_400">
+
+        <div class="text-center pd_bottom_30">
+
+            <h3 class="pd_bottom_8">Log in to your account</h3>
+            <p class="gray_500">Welcome back! Please enter your details.</p>
+
+        </div>
+
+        <form id="loginForm" class="pd_bottom_30">
+
+            <div class="mb-4">
+                <!--<div class="input-group-addon"><i class="icon-mail-alt"></i></div>-->
+                <label for="username-below-id" class="form-label">Email</label>
+                <input class="form-control" id="username-below-id" placeholder="Enter your email" name="LoginForm[username]" type="text" />            </div>
+            <div class="mb-4">
+                <!--<div class="input-group-addon"><i class="icon-key"></i></div>-->
+                <label for="password-below-id" class="form-label">Password</label>
+                <input class="form-control" id="password-below-id" placeholder="Enter your password" name="LoginForm[password]" type="password" />            </div>
+            <!--   <div class="mb-4">
+                            </div> -->
+            <div class="mb-4 form-check">
+                <!--<div class="input-group-addon"><i class="icon-cog"></i></div>-->
+                <input id="ytLoginForm_rememberMe" type="hidden" value="0" name="LoginForm[rememberMe]" /><input class="form-check-input" name="LoginForm[rememberMe]" id="LoginForm_rememberMe" value="1" type="checkbox" />
+                <label class="form-check-label" for="LoginForm_rememberMe">Remember me</label>            </div>
+            <div class="mb-4 form-check">
+                <!--<div class="input-group-addon"><i class="icon-hammer"></i></div>-->
+                <input id="ytLoginForm_terms_login" type="hidden" value="0" name="LoginForm[terms_login]" /><input class="form-check-input" required="required" name="LoginForm[terms_login]" id="LoginForm_terms_login" value="1" type="checkbox" />
+                <label class="form-check-label required" for="LoginForm_terms_login">I accept the <a href="/site/terms">terms and conditions</a> <span class="required">*</span></label>&nbsp;&nbsp;<em>(Updated 03 August 2023)</em>
+            </div>
+            <div>
+                <div class="help-block error" id="LoginForm_terms_login_em_" style="display:none"></div>
+                <div class="help-block error" id="LoginForm_accesserror_em_" style="display:none"></div>            </div>
+            <button type="submit" class="btn contact_btn">Sign in</button>
+        </form>
+        </form>
+        <div class="text-center pd_top_20">
+            <p class="font_size_14">Don’t have an account? <a href="/site/register">Sign up</a></p>
+            <p class="font_size_14">Forgot password? <a href="/site/RecoverDetails">Reset password</a></p>
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer_container">
+        <div class="custom_container">
+            <div class="row pd_top_20">
+                <div class="col-lg-4 col-md-12 mb-5">
+                    <img src="/themes/oxygen/images/logo.png" class="logo_img_footer mb-4" alt="...">
+                    <p class="font_18_28 white">Southern Africa's Specialist Marketplace for Commercial Vehicles & Heavy
+                        Equipment.</p>
+                    <div class="mt-4">
+                        <a class="prim_btn" href="/site/login">Login</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5">
+                    <h5 class="white font_700 mb-4 uppercase" style="font-size: 1.1rem; letter-spacing: 1px;">Quick Links
+                    </h5>
+                    <div class="navbar-nav footer_nav flex-column">
+                        <a class="nav-link py-2" href="/site/index#home">Home</a>
+                        <a class="nav-link py-2" href="/site/index#aboutus">About Us</a>
+                        <a class="nav-link py-2" href="/site/index#auction">Auction</a>
+                        <a class="nav-link py-2" href="/site/index#contactus">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <h5 class="white font_700 mb-3 uppercase" style="font-size: 1.1rem; letter-spacing: 1px;">Connect with
+                        Our Regional Offices</h5>
+                    <p class="white font_400 mb-4" style="opacity: 0.8; font-size: 0.95rem;">Our teams in South Africa and
+                        Zimbabwe are ready to assist with your fleet procurement and disposal needs.</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h6 class="font_700 mb-3" style="color: #41A648; text-transform: uppercase; font-size: 0.9rem;">
+                                South Africa Office</h6>
+                            <p class="white font_14_20 mb-2" style="opacity: 0.8;">Unit 1, 1st Floor, 187 Witch-Hazel Ave, Highveld, Centurion, 0157</p>
+                            <p class="white font_14_20 mb-1" style="opacity: 0.8;"><strong>Phone:</strong> +27 10 593 4591</p>
+                            <p class="white font_14_20" style="opacity: 0.8;"><strong>Email:</strong> office@earth-metals.com</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h6 class="font_700 mb-3" style="color: #FFCD05; text-transform: uppercase; font-size: 0.9rem;">
+                                Zimbabwe Office</h6>
+                            <p class="white font_14_20 mb-2" style="opacity: 0.8;">16 Woodholme Road, Emerald Hill, Harare</p>
+                            <p class="white font_14_20 mb-1" style="opacity: 0.8;"><strong>Phone:</strong> +263 77 221 0000</p>
+                            <p class="white font_14_20" style="opacity: 0.8;"><strong>Email:</strong> zim@earth-metals.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pd_bottom_20 pd_top_40">
+                <hr class="white" style="opacity: 0.1;">
+                <div class="d-flex flex-wrap justify-content-between pd_top_20 footer_lower">
+                    <p class="white mb-3">© 2026 Earth Metals. All rights reserved.</p>
+                    <div class="d-flex footer_nav">
+                        <a class="nav-link" href="/site/terms">Terms</a>
+                        <a class="nav-link" href="/site/terms/#privacy">Privacy</a>
+                        <a class="nav-link" href="/site/terms/#cookies">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+
+        // Card Slider
+
+        $('.home_slide').slick({
+            infinite: false,
+            speed: 300,
+            arrows: true,
+            slidesToShow: 3,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            slidesToScroll: 1,
+            prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+            nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+            responsive: [
+                {
+                    breakpoint: 1077,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 552,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        arrows: false,
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        // Testimonal
+
+    });
+
+
+</script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('[data-toggle=popover]').popover();
+jQuery('body').tooltip({"selector":"[data-toggle=tooltip]"});
+
+                window.cueWidgetConfig = {
+                    id: 'dd01d7fe-866f-496c-b1a0-8f55774eabd0',
+                    onReady: function () {
+                       // Set custom data to be included in a new session
+                       CueWidget.updateInitialSessionData({
+                           siteUrl: 'www.earth-metals.com',
+                       });
+                    }
+                };
+                
+                var s = document.createElement('script');
+                s.dataset.cueWidgetScript = 'true';
+                
+                if (window.requirejs && window.requirejs.defined) {
+                    s.src = 'https://webchat.cuedesk.com/widget.iife.js';
+                } else {
+                    s.src = 'https://webchat.cuedesk.com/widget.js';
+                }
+                document.head.appendChild(s);
+            
+jQuery('#login-form').yiiactiveform({'validateOnSubmit':true,'attributes':[{'id':'LoginForm_terms_login','inputID':'LoginForm_terms_login','errorID':'LoginForm_terms_login_em_','model':'LoginForm','name':'terms_login','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("You must accept the terms before you can login.");
+}
+
+}},{'id':'LoginForm_accesserror','inputID':'LoginForm_accesserror','errorID':'LoginForm_accesserror_em_','model':'LoginForm','name':'accesserror','enableAjaxValidation':false}],'errorCss':'error'});
+});
+/*]]>*/
+</script>
+</body>

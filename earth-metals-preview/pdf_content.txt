@@ -1,0 +1,566 @@
+EARTH METALS
+Website Content Blueprint
+Full Website Copy, SEO Strategy & Visual Direction
+Ready for Developer Implementation
+www.earth-metals.com  |  info@earth-metals.com
+How to Use This Document
+This document provides a complete content blueprint for the Earth Metals website. It is 
+structured section by section and includes:
+•Ready-to-implement website copy for each page section
+•SEO recommendations including page titles, meta descriptions, H1/H2 tags, and target 
+keywords
+•Visual direction notes for each section to guide design and image selection
+•All content is based on the live site at www.earth-metals.com and the Earth Metals 
+Digital Go-To-Market deck
+Brand voice: Professional, clear, industrial, confident. No hype, no slang. Pan-African in scope.
+Primary colours: Green #41A648  |  Yellow/Gold #FFCD05  |  Dark #454545
+Font: Poppins (all weights)
+GLOBAL SEO FOUNDATION
+Site-Wide Metadata, Keywords & Schema
+Global Target Keywords
+These keywords must be woven naturally throughout all section headings, body copy, image alt 
+text, and metadata across the entire website.
+Primary Keywords Secondary Keywords Long-Tail Keywords
+commercial vehicles Africa
+heavy equipment marketplace
+B2B auction platform Africa
+used trucks Southern Africafleet solutions Africa
+industrial machinery auction
+equipment disposal Africa
+verified asset tradingbuy used trucks South Africa
+sell commercial vehicles online 
+Africa
+heavy equipment auction 
+Zimbabwe
+inspected plant equipment for 
+sale Africa
+Homepage Meta: Global
+Page Title Earth Metals | B2B Marketplace for Commercial Vehicles & Equipment in 
+Africa
+Meta Description Earth Metals is a trusted B2B online marketplace for commercial vehicles, 
+plant equipment, and parts across Southern Africa. Buy and sell with 
+confidence. Verified listings. Transparent auctions.
+OG Title Earth Metals: Trade Commercial Assets Across Africa
+OG Description Buy and sell inspected commercial vehicles, heavy equipment, and parts 
+through a trusted B2B platform serving Southern Africa.
+Schema Type WebSite + Organization + LocalBusiness (two locations: Johannesburg & 
+Harare)
+SECTION 1: HERO / BANNER
+Primary Landing Section: Above the Fold
+Current State
+The live site currently shows: "Driving Business Forward" with a subheading referencing a 
+platform for dealers. This references Oxygen Capital branding and does not reflect the Earth 
+Metals brand, positioning, or target audience. All hero copy must be replaced.
+Recommended Hero Copy
+PRIMARY HEADLINE (H1)
+Beyond the Bid.
+Africa's Trusted B2B Marketplace for Commercial Vehicles, Equipment & Parts.
+SUBHEADING / SUPPORTING COPY
+Earth Metals connects verified sellers with qualified buyers across Southern Africa. Whether you  
+are disposing of a fleet, sourcing work-ready machinery, or expanding your procurement reach, 
+our platform delivers inspected assets, transparent auctions, and secure transactions, all in one 
+place.
+PRIMARY CTA BUTTON
+Explore Auctions
+SECONDARY CTA BUTTON
+Register to Bid
+TRUST BAR (BELOW CTA, SMALL TEXT OR ICONS)
+Verified Sellers  |  Inspected Assets  |  Transparent Bidding  |  Secure Transactions  |  Serving 
+Southern Africa
+ VISUAL NOTE: Full-width background: A high-quality photo of a line of commercial trucks or 📷
+heavy earthmoving equipment on an African landscape, open highway or mine site. Dark overlay for 
+text contrast. No lifestyle imagery. No people. Industrial and grounded.
+SEO: Hero Section
+Page Title Earth Metals | B2B Commercial Vehicle & Equipment Marketplace, Southern 
+Africa
+Meta Description Buy and sell inspected commercial vehicles, heavy equipment, and parts 
+through Earth Metals, Africa's trusted B2B online auction platform. Serving 
+South Africa, Zimbabwe, and the wider region.
+Target Keywords B2B auction Africa, commercial vehicles marketplace, heavy equipment 
+Southern Africa, buy trucks Africa, sell fleet online
+H1 Tag Beyond the Bid: Africa's Trusted B2B Marketplace for Commercial Vehicles, 
+Equipment and Parts
+H2 Tags Inspected Assets, Transparent Auctions | Verified Sellers, Qualified Buyers | 
+Serving Southern Africa
+SECTION 2: PLATFORM INTRODUCTION
+One Platform for Buying & Selling
+Section Heading
+H2
+One Platform. Every Asset. Across the Region.
+SUBHEADING
+Earth Metals simplifies the buying and selling of commercial vehicles, plant equipment, and 
+parts by replacing fragmented, offline trading with a structured, digital marketplace built for 
+business.
+Body Copy
+Our platform brings together fleet owners, dealers, logistics providers, construction companies, 
+mining operators, and agricultural businesses in a single, trusted environment. Every listing is 
+verified. Every auction is transparent. Every transaction is supported from listing to handover.
+Stop relying on informal networks and unpredictable pricing. Earth Metals gives your business 
+direct access to a qualified buyer or seller network across South Africa, Zimbabwe, and the 
+wider Southern African region.
+Feature Pillars: Four Cards
+Present as four icon + heading + description cards arranged in a 2x2 or 4-column grid:
+Verified Listings
+Every asset is inspected  
+and verified before 
+listing. Buyers know 
+exactly what they are 
+acquiring.Transparent 
+Bidding
+Real-time, competitive 
+auctions with full price 
+visibility. No hidden 
+costs, no surprises.Secure 
+Transactions
+Structured payment 
+processes and 
+documented handovers 
+protect both buyer and 
+seller at every stage.Regional Reach
+Access buyers and 
+sellers across Southern 
+Africa from a single 
+platform. No borders, no  
+barriers.
+ VISUAL NOTE: Four clean icon cards on a white or light grey background. Icons should be line-📷
+style or filled in brand green. No stock photography in this section. Keep it clean and typographic. 
+Option: a background image of an industrial yard or warehouse with overlay.
+SEO: Platform Intro
+Page Title How Earth Metals Works: B2B Vehicle & Equipment Marketplace
+Meta Description Discover how Earth Metals connects buyers and sellers of commercial vehicles 
+and heavy equipment across Southern Africa through verified listings, 
+transparent auctions, and secure transactions.
+Target Keywords how B2B vehicle auction works, commercial fleet marketplace Africa, equipment  
+trading platform, verified asset listings
+H1 Tag One Platform. Every Asset. Across the Region.
+H2 Tags Verified Listings | Transparent Bidding | Secure Transactions | Regional Reach
+SECTION 3: ABOUT US
+Who We Are & Why We Were Built
+Section Heading
+H2
+Built for the Way Africa Does Business
+SUBHEADING
+Earth Metals was created to solve a problem that every fleet owner, procurement manager, and 
+equipment dealer knows too well. The commercial asset market across Africa is fragmented, 
+inefficient, and hard to navigate.
+Body Copy
+Buying or selling a truck, excavator, or fleet of vehicles should not rely on informal contacts, 
+manual paperwork, or guesswork around pricing. As industries across Southern Africa grow and  
+asset movements increase, the need for a structured, digital alternative has never been greater.
+Earth Metals is that alternative. We are a B2B online auction platform built exclusively for 
+commercial vehicles, plant equipment, and parts. Our platform replaces offline trading methods 
+with a transparent, technology-driven marketplace that gives buyers and sellers the structure, 
+reach, and confidence they need to trade at scale.
+We serve fleet owners and dealers looking to dispose of assets efficiently, construction and 
+mining companies sourcing reliable machinery, logistics operators managing procurement, and 
+financial institutions requiring structured disposal processes, all within a single, trusted platform 
+across Southern Africa.
+Optional: Mission Statement Pull-Quote
+"We exist to make the trading of commercial assets across Africa more structured, 
+transparent, and reliable, from first bid to final handover."
+ VISUAL NOTE: Split layout: Left side shows a confident industrial image such as a mining hauler, 📷
+fleet row, or construction site. Right side shows body copy and pull-quote. Dark overlay optional. No 
+lifestyle photography.
+SEO: About Us
+Page Title About Earth Metals: B2B Commercial Asset Marketplace in Africa
+Meta Description Earth Metals is a B2B online auction platform for commercial vehicles, plant 
+equipment, and parts across Southern Africa. Learn about our mission to make 
+asset trading structured, transparent, and reliable.
+Target Keywords about Earth Metals, B2B asset marketplace Africa, commercial vehicle auction 
+company, equipment trading Southern Africa
+H1 Tag Built for the Way Africa Does Business
+H2 Tags Why Earth Metals Was Created | Who We Serve | Our Approach to Asset 
+Trading
+SECTION 4: SERVICES / AUCTION
+What the Platform Offers
+Section Heading
+H2
+Trade with Confidence Across Every Asset Class
+SUBHEADING
+From single-unit disposals to large fleet auctions, Earth Metals gives your business a structured 
+route to market and a reliable source of work-ready assets.
+FOR SELLERS: Copy Block
+HEADING
+Sell Faster. Reach Further.
+Earth Metals connects you with a network of qualified buyers across Southern Africa. List your 
+vehicles, equipment, or parts with full inspection documentation and let competitive bidding do 
+the work.
+•Reach verified buyers across South Africa, Zimbabwe, and the wider region
+•Professional inspection and documentation support
+•Structured auction process with transparent pricing
+•Faster disposal cycles with reduced administrative burden
+•Suitable for single units, batches, and complete fleet disposals
+CTA
+List Your Assets →
+FOR BUYERS: Copy Block
+HEADING
+Source Smarter. Buy with Certainty.
+Every asset listed on Earth Metals has been inspected, documented, and verified. Bid with 
+confidence knowing exactly what you are acquiring. No guesswork, no hidden conditions.
+•Access inspected commercial vehicles, heavy equipment, and parts
+•Transparent bidding with real-time visibility
+•Secure payment and handover processes
+•Source stock across South Africa, Zimbabwe, and beyond
+•Suitable for procurement teams, fleet managers, and dealers
+CTA
+Explore Current Listings →
+Asset Categories: Tag and Badge Style Display
+Display as a grid of category tags or cards:
+•Heavy Trucks & Haulage Vehicles
+•Trailers & Semi-Trailers
+•Construction & Earthmoving Equipment
+•Mining Machinery & Haul Trucks
+•Agricultural Equipment & Tractors
+•Buses & Passenger Vehicles
+•Light Commercial Vehicles
+•Plant & Industrial Equipment
+•Spare Parts & Components
+ VISUAL NOTE: Two-column layout: Sellers left, Buyers right. Background: white or very light grey.📷  
+Image accent: a single high-quality photo of an excavator or fleet row used as a visual divider or 
+background element with overlay.
+SEO: Services / Auction
+Page Title Buy & Sell Commercial Vehicles and Equipment | Earth Metals Auctions
+Meta Description Buy or sell inspected commercial vehicles, heavy equipment, trailers, and parts 
+across Southern Africa. Earth Metals offers structured B2B auctions with verified  
+listings and secure transactions.
+Target Keywords sell commercial vehicles online Africa, buy used trucks South Africa, heavy 
+equipment auction, fleet disposal Africa, buy plant equipment Zimbabwe
+H1 Tag Trade with Confidence Across Every Asset Class
+H2 Tags Sell Faster. Reach Further. | Source Smarter. Buy with Certainty. | Asset 
+Categories Available
+SECTION 5: INDUSTRIES SERVED
+Who Earth Metals Is Built For
+Section Heading
+H2
+The Industries We Serve
+SUBHEADING
+Earth Metals is built for businesses that depend on commercial vehicles and heavy equipment 
+to operate, grow, and deliver results. We understand the procurement and disposal pressures 
+unique to each sector.
+Industry Cards: Six Panels
+Present as a 3x2 or 6-column grid with an icon, industry name, and short description:
+Mining & Resources
+Haul trucks, excavators, and 
+support vehicles for surface and 
+underground operations. Source 
+or dispose of high-value mining 
+assets with full documentation.Construction
+Earthmoving equipment, graders, 
+loaders, and plant machinery for 
+infrastructure and commercial 
+construction projects across the 
+region.Logistics & Transport
+Trucks, trailers, and refrigerated 
+vehicles for cross-border logistics 
+and last-mile delivery operators 
+managing large and growing 
+fleets.
+Agriculture
+Tractors, combine harvesters, 
+irrigation equipment, and 
+transport vehicles for commercial 
+farming and agribusiness 
+operations.Fleet Dealers & Resellers
+Dealers and resellers seeking a 
+direct, efficient channel to source 
+stock and dispose of inventory 
+through competitive, transparent 
+auctions.Financial Institutions
+Banks, leasing companies, and 
+asset financiers requiring 
+structured, transparent disposal of  
+repossessed or end-of-lease 
+commercial assets.
+ VISUAL NOTE: Six industry cards in a clean grid. Each card uses a relevant industrial photo (mine📷  
+site, construction equipment, road truck, farm, dealer yard, office). Keep imagery consistent in tone, 
+real, grounded, no staging or lifestyle.
+SEO: Industries
+Page Title Industries Served: Earth Metals Commercial Asset Marketplace
+Meta Description Earth Metals serves mining, construction, logistics, agriculture, fleet dealers, and  
+financial institutions across Southern Africa. Find or dispose of commercial 
+vehicles and equipment with confidence.
+Target Keywords mining equipment auction Africa, construction machinery marketplace, fleet 
+dealer Africa, logistics vehicle sourcing, agriculture equipment Zimbabwe
+H1 Tag The Industries We Serve
+H2 Tags Mining & Resources | Construction | Logistics & Transport | Agriculture | Fleet 
+Dealers | Financial Institutions
+SECTION 6: WHY CHOOSE EARTH METALS
+Platform Differentiators
+Section Heading
+H2
+Why Businesses Choose Earth Metals
+SUBHEADING
+In a market where commercial asset transactions have traditionally been slow, informal, and 
+unpredictable, Earth Metals brings structure, speed, and confidence to every transaction.
+Differentiator Points: Five Blocks
+Present as a vertical list with icon, heading, and short paragraph, or as a two-column content 
+layout:
+0
+1Verified, Inspected Assets
+Every vehicle and piece of equipment listed on Earth Metals is professionally inspected before  
+going to auction. Buyers receive accurate condition reports, service history documentation, 
+and transparent asset records, removing the risk and uncertainty of uninspected purchases.
+0
+2Qualified, Verified Participants Only
+Earth Metals is a closed, business-to-business marketplace. Buyers and sellers are vetted 
+before participation, ensuring every interaction is with a legitimate, capable counterparty. This 
+eliminates wasted time, unqualified enquiries, and fraudulent activity.
+0
+3Transparent Pricing, No Surprises
+Real-time competitive bidding means prices are determined by the market, not by negotiation 
+or guesswork. Both buyer and seller have full visibility throughout the process, with no hidden 
+fees or last-minute changes.
+0
+4Structured, End-to-End Process
+From listing to payment and handover, every transaction on Earth Metals follows a clearly 
+defined workflow. This reduces delays, prevents disputes, and ensures both parties have a 
+consistent, reliable experience regardless of asset type or transaction size.
+0
+5Pan-African Reach from Day One
+With offices in Johannesburg and Harare and operations serving the wider Southern African 
+region, Earth Metals provides access to a cross-border buyer and seller network that no single  
+local marketplace can match.
+ VISUAL NOTE: Clean numbered list with a side accent using brand green. Optional right-column 📷
+image: a birds-eye aerial view of a commercial yard or port with trucks. Keep background white or 
+light.
+SEO: Why Choose Us
+Page Title Why Choose Earth Metals | Trusted B2B Asset Marketplace Africa
+Meta Description Earth Metals offers verified listings, qualified buyers and sellers, transparent 
+pricing, and structured transactions for commercial vehicles and equipment 
+across Southern Africa.
+Target Keywords trusted vehicle auction Africa, verified asset marketplace, transparent equipment  
+auction, B2B fleet trading platform
+H1 Tag Why Businesses Choose Earth Metals
+H2 Tags Verified Assets | Qualified Participants | Transparent Pricing | Structured 
+Process | Pan-African Reach
+SECTION 7: HOW IT WORKS
+The Auction Process Explained
+Section Heading
+H2
+Simple. Structured. Secure.
+SUBHEADING
+The Earth Metals process is designed to remove friction from buying and selling high-value 
+commercial assets. Here is how it works:
+Process Steps: For Sellers
+DISPLAY AS A HORIZONTAL OR VERTICAL NUMBERED STEP SEQUENCE
+Step 1 Step 2 Step 3 Step 4
+Register & Verify
+Create your business 
+account and complete 
+verification.List Your Asset
+Submit your asset for 
+listing with photos, 
+documentation, and 
+inspection.Auction Goes Live
+Qualified buyers bid in 
+real time. You set the 
+reserve. We manage the  
+process.Receive Payment &  
+Handover
+Secure payment is 
+confirmed before 
+handover. Full 
+documentation is 
+provided.
+Process Steps: For Buyers
+Step 1 Step 2 Step 3 Step 4
+Register & Verify
+Create your buyer 
+account and complete 
+business verification.Browse & Review
+Explore current listings  
+with full inspection reports  
+and asset documentation.Bid in Real Time
+Place bids on the assets  
+you want. Watch live 
+bidding and set your 
+maximum.Pay & Take Delivery
+Complete payment 
+securely and arrange 
+delivery or collection 
+across the region.
+SEO: How It Works
+Page Title How to Buy and Sell at Earth Metals: Step-by-Step Process
+Meta Description Learn how the Earth Metals auction process works for buyers and sellers of 
+commercial vehicles and equipment. Register, list or bid, and complete secure 
+transactions across Southern Africa.
+Target Keywords how B2B auction works Africa, sell truck online Africa, buy equipment at auction,  
+commercial vehicle auction process
+H1 Tag Simple. Structured. Secure.
+H2 Tags How to Sell on Earth Metals | How to Buy on Earth Metals | Auction Steps
+SECTION 8: CONTACT US
+Contact Information & Form Copy
+Section Heading
+H2
+Get in Touch
+SUBHEADING
+Whether you are ready to list an asset, register as a buyer, or simply want to understand how 
+the platform works, our team is ready to assist.
+Contact Introduction Copy
+Earth Metals operates across Southern Africa with offices in Johannesburg and Harare. Reach 
+us directly or complete the contact form and a member of our team will respond within one 
+business day.
+Office Locations: Display as Two Cards
+South Africa
+155 West Street
+Sandton, Johannesburg
++27 84 062 8040
+info@earth-metals.comZimbabwe
+Block C, 1st Floor, Smatsatsa Office Park
+Borrowdale, Harare
++263 242 870 965
++263 77 5758 232
+Contact Form: Field Labels and Placeholder Copy
+Field Placeholder Text Required?
+Full Name Your full name Yes
+Company Name Your business name Yes
+Email Address Your business email Yes
+Phone Number Your contact number Yes
+Country / Region South Africa, Zimbabwe, Other Yes
+I am a... Buyer / Seller / Both / Partner Yes
+Message Tell us what you are looking for or what No
+you have available
+FORM SUBMIT BUTTON
+Send Message
+PRIVACY NOTE BELOW FORM
+By submitting this form you agree to our Privacy Policy. We do not share your information with 
+third parties. Earth Metals will only use your details to respond to your enquiry.
+FORM CONFIRMATION MESSAGE (AFTER SUBMISSION)
+Thank you for getting in touch. A member of the Earth Metals team will respond within one 
+business day.
+ VISUAL NOTE: Section background: dark overlay on an industrial yard or fleet image. Contact 📷
+cards in dark with green accents. Form on white card with clean spacing. Optional: embed a Google 
+Map showing Sandton, Johannesburg and Harare locations.
+SEO: Contact
+Page Title Contact Earth Metals: B2B Commercial Asset Marketplace
+Meta Description Contact Earth Metals in Johannesburg, South Africa or Harare, Zimbabwe. Get 
+in touch to buy, sell, or learn more about our B2B commercial vehicle and 
+equipment auction platform.
+Target Keywords contact Earth Metals, commercial vehicle auction South Africa contact, heavy 
+equipment marketplace Zimbabwe, Earth Metals Johannesburg
+H1 Tag Get in Touch
+H2 Tags South Africa Office | Zimbabwe Office | Send Us a Message
+SECTION 9: FOOTER
+Footer Copy, Links & Legal
+Footer Tagline
+EARTH METALS
+Beyond the Bid: Africa's Trusted B2B Marketplace for Commercial Vehicles, Equipment and Parts
+www.earth-metals.com  |  info@earth-metals.com
+South Africa: 155 West Street, Sandton, Johannesburg  |  +27 84 062 8040
+Zimbabwe: Block C, 1st Floor, Smatsatsa Office Park, Borrowdale, Harare  |  +263 242 870 965 / +263 77  
+5758 232
+© 2025 Earth Metals. All rights reserved.  |  Privacy Policy  |  Terms of Use  |  Cookie Policy
+Footer Navigation Links
+Organize footer into four columns:
+Platform
+How It Works
+For Buyers
+For Sellers
+Register to Bid
+List an AssetCompany
+About Us
+Industries Served
+Why Earth Metals
+Contact UsAsset Types
+Trucks & Haulage
+Construction Equipment
+Mining Machinery
+Agricultural Equipment
+Parts & ComponentsContact
+info@earth-metals.com
+SA: +27 84 062 8040
+ZW: +263 242 870 965
+LinkedIn
+Facebook
+SECTION 10: EMAIL SIGNATURE TEMPLATE
+Standard Email Signature for All Staff
+Instructions for Designer / Developer
+The email signature should be produced as an HTML file that staff can install in their email 
+clients (Gmail, Outlook, Apple Mail). It must be mobile-responsive and render correctly without 
+external image hosting. Use inline CSS only.
+Signature Structure: Copy Ready
+[First Name Surname]
+[Job Title]
+EARTH METALS
+Mobile: [+27/+263 number]
+Email: [firstname@earth-metals.com]
+www.earth-metals.com
+Inspected commercial vehicles. Work-ready. Verified. Beyond the Bid.
+TWO-OFFICE VARIANT (FOR COMPANY-WIDE USE)
+South Africa: 155 West Street, Sandton, Johannesburg  |  +27 84 062 8040
+Zimbabwe: Block C, 1st Floor, Smatsatsa Office Park, Borrowdale, Harare  |  +263 242 870 965
+SECTION 11: TRACKING & ADS READINESS
+Technical Notes for Developer
+Google Analytics 4 (GA4)
+Install GA4 tracking on all pages. Set up the following conversion events:
+•form_submit: triggered on Contact form submission
+•register_click: triggered when user clicks Register to Bid or Get Started
+•listing_view: triggered when a user views an individual auction listing
+•search_performed: triggered when a user searches or filters listings
+Meta Pixel (Facebook / Instagram Ads)
+Install Meta Pixel on all pages for remarketing and conversion tracking. Standard events to 
+configure:
+•PageView: all pages
+•Lead: on contact form submission
+•CompleteRegistration: on successful user registration
+•ViewContent: on individual listing views
+LinkedIn Insight Tag
+Install LinkedIn Insight Tag on all pages to support B2B retargeting and audience building for 
+sponsored content and lead generation campaigns. Priority for Earth Metals given its B2B 
+audience (fleet managers, procurement, operations).
+Google Ads: Conversion Actions
+Set up the following conversion actions in Google Ads:
+•Contact Form Submission
+•Registration Started
+•Registration Completed
+•Listing Enquiry
+Page Speed & Technical SEO
+•All images must include descriptive alt text containing relevant keywords (e.g., 
+alt="Inspected commercial trucks for auction South Africa")
+•Implement structured data (schema.org): Organization, LocalBusiness (x2), WebSite, 
+and BreadcrumbList
+•Submit XML sitemap to Google Search Console on launch
+•Set up canonical URLs to prevent duplicate content issues
+•Ensure page load speed below 3 seconds on mobile
+•Implement Open Graph tags on all pages for social sharing
+CMS / Content Notes
+The platform should allow easy future addition of:
+•Blog / News section for SEO content marketing (keyword-rich articles on commercial 
+vehicle trading, fleet management, market trends)
+•Auction Listings page with filter functionality (by asset type, country, price range)
+•Individual Listing pages with full inspection report display and bidding interface
+•User Dashboard (registered buyers and sellers)
+SECTION 12: LAUNCH CONTENT THEMES
+Social Media & Content Calendar Starters
+Month 1: Awareness (Platform Introduction)
+WeekTheme Post / Caption Idea Channels
+1Platform Launch Earth Metals is live. A trusted B2B 
+marketplace for commercial vehicles and 
+equipment across Southern Africa. 
+Inspected. Verified. Transparent. Beyond 
+the Bid. → Link to siteLinkedIn, Facebook
+2For Sellers Fleet disposal just got simpler. List your 
+vehicles on Earth Metals and reach 
+qualified buyers across the region. No 
+middlemen. No guesswork. Just results.LinkedIn, Facebook
+3For Buyers Finding work-ready commercial vehicles 
+used to mean phone calls and site visits. 
+Earth Metals gives you inspected, verified  
+assets, available to bid on right now.LinkedIn, Facebook, 
+YouTube
+4Process / Trust Every asset on Earth Metals is inspected 
+before it goes to auction. That means you  
+bid with information, not assumption. Full 
+Transparency. | Asset walkaround video 
+postYouTube, LinkedIn, 
+Facebook
+Hashtag Strategy
+Use consistently across all posts:
+#EarthMetals  #BeyondTheBid  #CommercialVehicles  #HeavyEquipment  #B2BAuction  
+#SouthernAfrica  #FleetManagement  #TruckAuction  #MiningEquipment  
+#ConstructionEquipment  #AssetDisposal  #IndustrialMachinery
+Document prepared for:
+EARTH METALS
+Website Content Blueprint  |  www.earth-metals.com
+South Africa: +27 84 062 8040  |  Zimbabwe: +263 242 870 965
+info@earth-metals.com

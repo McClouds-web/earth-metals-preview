@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><!--suppress ALL -->
+<html lang="en"> <!--<![endif]-->
+
+<head class="no-js">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" href="themes/oxygen/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <!-- Jquery --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap 5 --->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+
+
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <!-- Vue -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.5/vue.global.js"></script>
+
+    <!-- Recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!-- Scroll Magic -->
+    <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+
+    <link rel="stylesheet" href="themes/oxygen/css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="themes/oxygen/bootstrap/js/scrollmagicanimations.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+
+            $(".navbar-toggler").click(function () {
+                $(".navbar-collapse").toggleClass("show_menu");
+            });
+
+        });
+
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/7afa4ec1/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/7afa4ec1/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/7afa4ec1/css/bootstrap-yii.css" />
+    <link rel="stylesheet" type="text/css" href="assets/7afa4ec1/css/jquery-ui-bootstrap.css" />
+    <script type="text/javascript" src="assets/927c8076/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/7afa4ec1/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/7afa4ec1/js/bootstrap-noconflict.js"></script>
+    <script type="text/javascript" src="assets/7afa4ec1/bootbox/bootbox.min.js"></script>
+    <script type="text/javascript" src="assets/7afa4ec1/notify/notify.min.js"></script>
+    <script type="text/javascript" src="assets/927c8076/jquery.yiiactiveform.js"></script>
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+
+    <!-- Blueprint SEO & Tracking Scripts -->
+    <meta name="description"
+        content="Earth Metals is a trusted B2B online marketplace for commercial vehicles, plant equipment, and parts across Southern Africa. Buy and sell with confidence. Verified listings. Transparent auctions.">
+    <meta property="og:title" content="Earth Metals: Trade Commercial Assets Across Africa">
+    <meta property="og:description"
+        content="Buy and sell inspected commercial vehicles, heavy equipment, and parts through a trusted B2B platform serving Southern Africa.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Earth Metals",
+      "url": "https://www.earth-metals.com",
+      "contactPoint": [
+        { "@type": "ContactPoint", "telephone": "+27-84-062-8040", "contactType": "customer service", "contactOption": "TollFree", "areaServed": "ZA" },
+        { "@type": "ContactPoint", "telephone": "+263-242-870-965", "contactType": "customer service", "areaServed": "ZW" }
+      ]
+    }
+    </script>
+
+    <!-- GA4 Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Meta Pixel Placeholder -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'XXXXXXXXXXXXXXX');
+        fbq('track', 'PageView');
+    </script>
+    <!-- End Blueprint SEO & Tracking Scripts -->
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        var recaptchaCallback = function (response) { jQuery('#ContactForm_reCaptcha').val(response); };
+        var recaptchaExpiredCallback = function () { jQuery('#ContactForm_reCaptcha').val(''); };
+        /*]]>*/
+    </script>
+
+
+    <section class="sticky_header" id="nav_header_block">
+
+        <section class="custom_container">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="" class="navbar-brand d-flex">
+                        <img src="themes/oxygen/images/logo.png" class="logo_img_header" alt="...">
+                    </a>
+                    <button class="navbar-toggler x collapsed" type="button" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-collapse justify-content-between responsive_hidden" id="navbarNavAltMarkup">
+                        <div class="navbar-nav" id="navigation_menu">
+                            <a class="nav-link nav_menu" href="site/index#home">Home</a>
+                            <a class="nav-link nav_menu" href="site/index#aboutus">About Us</a>
+                            <a class="nav-link nav_menu" href="site/index#auction">Auction</a>
+                            <a class="nav-link nav_menu" href="site/index#contactus">Contact Us</a>
+                        </div>
+                        <div class="navbar-nav d-flex align-items-center">
+                            <a class="prim_btn" href="site/login">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+        </section>
+    </section>
+
+
+    <title>Earth Metals: Specialist Marketplace for Heavy Assets</title>
+
+
+    <section id="home" class="home_banner grouping dark-bg">
+
+        <div class="custom_container">
+
+            <div class="row">
+                <div class="col-md-12 d-flex align-items-center">
+                    <div class="head_CTA">
+
+                        <h1 class="white mb-4 font_700 main_font">Driving Business Forward</h1>
+
+                        <div>
+
+                            <h5 class="mb-5 font_400 white" style="max-width: 455px">Powering dealers and businesses
+                                with a connected platform to source, trade, and manage commercial vehicles and equipment
+                                all in one place.</h5>
+
+                            <a class="prim_btn" href="site/register">Get started</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5 p-0">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Sub-hero Information Bar -->
+    <section style="background-color: #ffffff; padding: 70px 0; border-bottom: 1px solid #eaeaea;">
+        <div class="custom_container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <p class="mb-4 font_400 text-center"
+                        style="max-width: 900px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6; color: #454545;">
+                        Earth Metals connects verified sellers with qualified buyers across Southern Africa. Whether you
+                        are disposing of a fleet, sourcing work-ready machinery, or expanding your procurement reach,
+                        our platform delivers inspected assets, transparent auctions, and secure transactions, all in
+                        one place.</p>
+                    <div class="trust-bar justify-content-center" style="margin-top: 30px;">
+                        <div class="trust-item" style="color: #454545;"><span class="iconify"
+                                data-icon="mdi:check-decagram"></span> Verified Sellers</div>
+                        <div class="trust-item" style="color: #454545;"><span class="iconify"
+                                data-icon="mdi:magnify-scan"></span> Inspected Assets</div>
+                        <div class="trust-item" style="color: #454545;"><span class="iconify"
+                                data-icon="mdi:gavel"></span> Transparent Bidding</div>
+                        <div class="trust-item" style="color: #454545;"><span class="iconify"
+                                data-icon="mdi:shield-check"></span> Secure Transactions</div>
+                        <div class="trust-item" style="color: #454545;"><span class="iconify"
+                                data-icon="mdi:earth"></span> Serving Southern Africa</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box delay-1" style="height: 100%; border-radius: 12px; padding: 35px 25px;">
+                        <span class="iconify" data-icon="mdi:check-decagram"
+                            style="color: #41A648; font-size: 2.8rem; margin-bottom: 20px;"></span>
+                        <h4 class="font_700 mb-3" style="color: #41A648; font-size: 1.25rem;">Verified Listings</h4>
+                        <p style="color: #454545; font-size: 0.9rem; line-height: 1.6;">Every asset is inspected and
+                            verified before listing. Buyers know exactly what they are acquiring.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box delay-2" style="height: 100%; border-radius: 12px; padding: 35px 25px;">
+                        <span class="iconify" data-icon="mdi:gavel"
+                            style="color: #41A648; font-size: 2.8rem; margin-bottom: 20px;"></span>
+                        <h4 class="font_700 mb-3" style="color: #41A648; font-size: 1.25rem;">Transparent Bidding</h4>
+                        <p style="color: #454545; font-size: 0.9rem; line-height: 1.6;">Real-time, competitive auctions
+                            with full price visibility. No hidden costs, no surprises.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box delay-3" style="height: 100%; border-radius: 12px; padding: 35px 25px;">
+                        <span class="iconify" data-icon="mdi:shield-check"
+                            style="color: #41A648; font-size: 2.8rem; margin-bottom: 20px;"></span>
+                        <h4 class="font_700 mb-3" style="color: #41A648; font-size: 1.25rem;">Secure Transactions</h4>
+                        <p style="color: #454545; font-size: 0.9rem; line-height: 1.6;">Structured payment processes and
+                            documented handovers protect both buyer and seller at every stage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-box delay-4" style="height: 100%; border-radius: 12px; padding: 35px 25px;">
+                        <span class="iconify" data-icon="mdi:earth"
+                            style="color: #41A648; font-size: 2.8rem; margin-bottom: 20px;"></span>
+                        <h4 class="font_700 mb-3" style="color: #41A648; font-size: 1.25rem;">Regional Reach</h4>
+                        <p style="color: #454545; font-size: 0.9rem; line-height: 1.6;">Access buyers and sellers across
+                            Southern Africa from a single platform. No borders, no barriers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section style="background: #121212; padding: 60px 0;">
+        <div class="custom_container">
+            <div class="row text-center">
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                        <p class="stat-label">Assets Sold</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="1200">0</span><span class="stat-suffix">+</span>
+                        <p class="stat-label">Registered Buyers</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-suffix"></span>
+                        <p class="stat-label">Countries Served</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span><span class="stat-suffix">B+</span>
+                        <p class="stat-label">Rands in Transactions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SEC 2: ABOUT US -->
+    <section id="aboutus" class="pad_top_100 pd_bottom_60 px-0 grouping">
+        <div class="custom_container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 padding_right_80">
+                    <div class="about_img"
+                        style="background-image: url('themes/oxygen/images/mining_hauler.png'); background-size: cover; background-position: center; border-radius: 12px; min-height: 450px; position: relative;">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-7 mobile_order_2 d-flex align-items-center">
+                    <div>
+                        <p class="sub_head_title mb-4 main_font font_700"><span class="underlined">About</span> Earth
+                            Metals</p>
+                        <h4 class="mb-4 font_700" style="color: #454545;">The Specialist Marketplace for Heavy Assets.
+                        </h4>
+                        <p class="mb-4" style="font-size: 1.05rem; color: #555; line-height: 1.7;">Earth Metals is a
+                            business-to-business auction platform dedicated to the commercial vehicle, heavy equipment,
+                            and industrial parts sectors. We bridge the gap between fleet owners, dealers, and business
+                            buyers across Southern Africa.</p>
+                        <p class="mb-5" style="font-size: 1.05rem; color: #555; line-height: 1.7;">By combining
+                            professional inspections with a structured bidding process, we ensure that every transaction
+                            is grounded in trust, clarity, and market-driven value. Whether you are disposing of an
+                            entire mining fleet or sourcing a single prime mover, Earth Metals provides the tools and
+                            the network to trade with confidence.</p>
+                        <a class="prim_btn" href="#contactus" style="padding: 15px 35px;">Learn More About Our
+                            Process</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SEC 3: SERVICES / AUCTION -->
+    <section id="services" class="pad_top_100 pd_bottom_60 grouping light-bg">
+        <div class="custom_container">
+            <div class="row mb-5">
+                <div class="col-sm-12 text-center">
+                    <h2 class="sub_head_title main_font font_700"><span class="underlined">Structured</span> Solutions
+                        for Buyers & Sellers</h2>
+                    <p style="max-width: 800px; margin: 0 auto; color: #555;">Earth Metals provides a dual-sided
+                        marketplace tailored to the specific needs of commercial fleet operators and specialist
+                        equipment dealers.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- For Sellers -->
+                <div class="col-md-6 mb-4">
+                    <div
+                        style="background: white; padding: 40px; border-radius: 12px; border: 1px solid #eaeaea; height: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
+                        <h3 class="font_700 mb-4" style="color: #41A648;">For Sellers: Efficient Asset Disposal</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-start">
+                                <span class="iconify mt-1 mr-2" data-icon="mdi:check-circle"
+                                    style="color: #41A648; font-size: 1.4rem;"></span>
+                                <div><strong>Fleet Disposal:</strong> Turn idle assets into capital quickly through our
+                                    verified bidder network.</div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <span class="iconify mt-1 mr-2" data-icon="mdi:check-circle"
+                                    style="color: #41A648; font-size: 1.4rem;"></span>
+                                <div><strong>Professional Inspections:</strong> We handle the condition reporting to
+                                    build buyer trust and maximise value.</div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <span class="iconify mt-1 mr-2" data-icon="mdi:check-circle"
+                                    style="color: #41A648; font-size: 1.4rem;"></span>
+                                <div><strong>Market-Driven Pricing:</strong> Achieve current market value through
+                                    transparent, competitive bidding.</div>
+                            </li>
+                        </ul>
+                        <a href="site/register" class="prim_btn mt-4"
+                            style="background: #41A648; width: 100%; text-align: center;">Register to Sell</a>
+                    </div>
+                </div>
+
+                <!-- For Buyers -->
+                <div class="col-md-6 mb-4">
+                    <div
+                        style="background: white; padding: 40px; border-radius: 12px; border: 1px solid #eaeaea; height: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
+                        <h3 class="font_700 mb-4" style="color: #FFCD05;">For Buyers: Quality & Reach</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-start">
+                                <span class="iconify mt-1 mr-2" data-icon="mdi:check-circle"
+                                    style="color: #FFCD05; font-size: 1.4rem;"></span>
+                                <div><strong>Verified Quality:</strong> Access work-ready vehicles with full inspection
+                                    reports and service history.</div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <span class="iconify mt-1 mr-2" data-icon="mdi:check-circle"
+                                    style="color: #FFCD05; font-size: 1.4rem;"></span>
+                                <div><strong>Regional Sourcing:</strong> Bid on assets across Southern Africa from the
+                                    comfort of your office.</div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <span class="iconify mt-1 mr-2" data-icon="mdi:check-circle"
+                                    style="color: #FFCD05; font-size: 1.4rem;"></span>
+                                <div><strong>Transparent Auctions:</strong> Benefit from a clear, structured bidding
+                                    process with no hidden costs.</div>
+                            </li>
+                        </ul>
+                        <a href="site/register" class="prim_btn mt-4"
+                            style="background: #FFCD05; color: #121212; width: 100%; text-align: center;">Browse
+                            Auctions</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asset Categories -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="font_700 mb-3" style="color: #888; text-transform: uppercase; letter-spacing: 1px;">Core
+                        Asset Categories</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3" style="gap: 15px;">
+                        <span class="asset-badge">Trucks & Prime Movers</span>
+                        <span class="asset-badge">Mining Equipment</span>
+                        <span class="asset-badge">Construction Plant</span>
+                        <span class="asset-badge">Trailers & Tankers</span>
+                        <span class="asset-badge">Commercial Fleets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+
+
+
+
+    <!-- SEC 4: INDUSTRIES SERVED -->
+    <section id="industries" class="pad_top_100 pd_bottom_60 px-0 grouping light-bg">
+        <div class="custom_container">
+            <div class="row mb-5">
+                <div class="col-sm-12 text-center">
+                    <h2 class="sub_head_title main_font font_700"><span class="underlined">The</span> Industries We
+                        Serve</h2>
+                    <p style="max-width: 800px; margin: 0 auto; color: #555;">Earth Metals is built for businesses that
+                        depend on commercial vehicles and heavy equipment to operate, grow, and deliver results. We
+                        understand the procurement and disposal pressures unique to each sector.</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Mining -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="industry-card">
+                        <div class="industry-card-img"
+                            style="background-image: url('themes/oxygen/images/ind_mining.png');"></div>
+                        <div class="industry-card-body">
+                            <h4 class="font_700 mb-2">Mining & Resources</h4>
+                            <p style="font-size: 0.9rem; color: #666;">Haul trucks, excavators, and support vehicles for
+                                surface and underground operations. Source or dispose of high-value mining assets with
+                                full documentation.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Construction -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="industry-card">
+                        <div class="industry-card-img"
+                            style="background-image: url('themes/oxygen/images/ind_construction.png');"></div>
+                        <div class="industry-card-body">
+                            <h4 class="font_700 mb-2">Construction</h4>
+                            <p style="font-size: 0.9rem; color: #666;">Earthmoving equipment, graders, loaders, and
+                                plant machinery for infrastructure and commercial construction projects across the
+                                region.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Logistics -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="industry-card">
+                        <div class="industry-card-img"
+                            style="background-image: url('themes/oxygen/images/ind_logistics.png');"></div>
+                        <div class="industry-card-body">
+                            <h4 class="font_700 mb-2">Logistics & Transport</h4>
+                            <p style="font-size: 0.9rem; color: #666;">Trucks, trailers, and refrigerated vehicles for
+                                cross-border logistics and last-mile delivery operators managing large and growing
+                                fleets.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agriculture -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="industry-card h-100">
+                        <div class="industry-card-img"
+                            style="background-image: url('themes/oxygen/images/header.webp');"></div>
+                        <div class="industry-card-body">
+                            <h4 class="font_700 mb-2">Agriculture</h4>
+                            <p style="font-size: 0.9rem; color: #666;">Tractors, combine harvesters, irrigation
+                                equipment, and transport vehicles for commercial farming and agribusiness operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fleet Dealers -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="industry-card h-100">
+                        <div class="industry-card-img"
+                            style="background-image: url('themes/oxygen/images/platform.webp');"></div>
+                        <div class="industry-card-body">
+                            <h4 class="font_700 mb-2">Fleet Dealers & Resellers</h4>
+                            <p style="font-size: 0.9rem; color: #666;">Dealers and resellers seeking a direct, efficient
+                                channel to source stock and dispose of inventory through competitive, transparent
+                                auctions.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finance -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="industry-card h-100">
+                        <div class="industry-card-img"
+                            style="background: #444; display: flex; align-items: center; justify-content: center; color: white;">
+                            <span class="iconify" data-icon="mdi:bank" style="font-size: 3rem;"></span>
+                        </div>
+                        <div class="industry-card-body">
+                            <h4 class="font_700 mb-2">Financial Institutions</h4>
+                            <p style="font-size: 0.9rem; color: #666;">Banks, leasing companies, and asset financiers
+                                requiring structured, transparent disposal of repossessed or end-of-lease commercial
+                                assets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MID-PAGE CTA BANNER -->
+    <section style="background: linear-gradient(135deg, #41A648 0%, #2d7a33 100%); padding: 70px 0;">
+        <div class="custom_container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-7 mb-4 mb-md-0">
+                    <h2 class="sub_head_title main_font font_700 white mb-3" style="font-size:2rem;">Ready to List Your
+                        Fleet?</h2>
+                    <p class="white font_400" style="opacity:0.9; font-size:1.05rem; max-width:600px;">Register today
+                        and go live within 48 hours. Access Southern Africa's most qualified buyer network and achieve
+                        true market value for your assets.</p>
+                </div>
+                <div class="col-lg-4 col-md-5 text-md-end">
+                    <a href="site/register" class="prim_btn"
+                        style="background:#FFCD05; color:#121212; font-size:1rem; padding:16px 36px;">Register Now —
+                        It's Free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEC 6: WHY CHOOSE EARTH METALS -->
+    <section class="pad_top_100 pad_bottom_100 px-0 grouping">
+        <div class="custom_container">
+            <div class="row">
+                <div class="col-md-5 mb-4 d-flex align-items-center">
+                    <div>
+                        <h2 class="sub_head_title main_font font_700"><span class="underlined">Why</span> Businesses
+                            Choose Earth Metals</h2>
+                        <p class="mb-4">In a market where commercial asset transactions have traditionally been slow,
+                            informal, and unpredictable, Earth Metals brings structure, speed, and confidence to every
+                            transaction.</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="mb-4">
+                        <h4 class="font_700" style="color:#41A648;">01 Verified, Inspected Assets</h4>
+                        <p>Every vehicle and piece of equipment listed on Earth Metals is professionally inspected
+                            before going to auction. Buyers receive accurate condition reports, service history
+                            documentation, and transparent asset records, removing the risk and uncertainty of
+                            uninspected purchases.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="font_700" style="color:#41A648;">02 Qualified, Verified Participants Only</h4>
+                        <p>Earth Metals is a closed, business-to-business marketplace. Buyers and sellers are vetted
+                            before participation, ensuring every interaction is with a legitimate, capable counterparty.
+                            This eliminates wasted time, unqualified enquiries, and fraudulent activity.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="font_700" style="color:#41A648;">03 Transparent Pricing, No Surprises</h4>
+                        <p>Real-time competitive bidding means prices are determined by the market, not by negotiation
+                            or guesswork. Both buyer and seller have full visibility throughout the process, with no
+                            hidden fees or last-minute changes.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="font_700" style="color:#41A648;">04 Structured, End-to-End Process</h4>
+                        <p>From listing to payment and handover, every transaction on Earth Metals follows a clearly
+                            defined workflow. This reduces delays, prevents disputes, and ensures both parties have a
+                            consistent, reliable experience regardless of asset type or transaction size.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="font_700" style="color:#41A648;">05 Pan-African Reach from Day One</h4>
+                        <p>With offices in Johannesburg and Harare and operations serving the wider Southern African
+                            region, Earth Metals provides access to a cross-border buyer and seller network that no
+                            single local marketplace can match.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED AUCTIONS PREVIEW -->
+    <section style="background:#f7f8fa; padding: 80px 0;">
+        <div class="custom_container">
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <h2 class="sub_head_title main_font font_700">Featured Auctions</h2>
+                    <p style="color:#555;">A snapshot of the asset types currently going through the Earth Metals
+                        platform. Register to view live listings and place bids.</p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-md-end">
+                    <a href="site/register" class="prim_btn">View All Auctions</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="auction-card">
+                        <div class="auction-card__img"
+                            style="background:linear-gradient(135deg,#1a1a1a,#2d2d2d); display:flex; align-items:center; justify-content:center;">
+                            <span class="iconify" data-icon="mdi:truck" style="color:#41A648; font-size:4rem;"></span>
+                        </div>
+                        <div class="auction-card__body">
+                            <span class="auction-card__badge auction-card__badge--live">● Live Now</span>
+                            <h5 class="auction-card__title">2019 Volvo FH 540 Prime Mover</h5>
+                            <p class="auction-card__meta">Condition: Inspected &nbsp;|&nbsp; Location: Gauteng, ZA</p>
+                            <div class="auction-card__footer">
+                                <div>
+                                    <span style="color:#888; font-size:0.78rem;">Current Bid</span>
+                                    <p class="auction-card__price">R 1,250,000</p>
+                                </div>
+                                <div class="auction-card__timer" id="timer-1" data-end="2026-03-10T18:00:00">--</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="auction-card">
+                        <div class="auction-card__img"
+                            style="background:linear-gradient(135deg,#1a1a1a,#2d2d2d); display:flex; align-items:center; justify-content:center;">
+                            <span class="iconify" data-icon="mdi:excavator"
+                                style="color:#FFCD05; font-size:4rem;"></span>
+                        </div>
+                        <div class="auction-card__body">
+                            <span class="auction-card__badge auction-card__badge--live">● Live Now</span>
+                            <h5 class="auction-card__title">2020 CAT 320 Excavator</h5>
+                            <p class="auction-card__meta">Condition: Inspected &nbsp;|&nbsp; Location: Harare, ZW</p>
+                            <div class="auction-card__footer">
+                                <div>
+                                    <span style="color:#888; font-size:0.78rem;">Current Bid</span>
+                                    <p class="auction-card__price">R 2,800,000</p>
+                                </div>
+                                <div class="auction-card__timer" id="timer-2" data-end="2026-03-09T12:00:00">--</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="auction-card">
+                        <div class="auction-card__img"
+                            style="background:linear-gradient(135deg,#1a1a1a,#2d2d2d); display:flex; align-items:center; justify-content:center;">
+                            <span class="iconify" data-icon="mdi:tanker-truck"
+                                style="color:#41A648; font-size:4rem;"></span>
+                        </div>
+                        <div class="auction-card__body">
+                            <span class="auction-card__badge auction-card__badge--upcoming">◌ Upcoming</span>
+                            <h5 class="auction-card__title">2018 Henred Fruehauf Triaxle Tanker</h5>
+                            <p class="auction-card__meta">Condition: Inspected &nbsp;|&nbsp; Location: Cape Town, ZA</p>
+                            <div class="auction-card__footer">
+                                <div>
+                                    <span style="color:#888; font-size:0.78rem;">Opening Bid</span>
+                                    <p class="auction-card__price">R 680,000</p>
+                                </div>
+                                <div class="auction-card__timer" id="timer-3" data-end="2026-03-12T09:00:00">--</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-3" style="color:#888; font-size:0.9rem;">* Sample listings for illustration.
+                Register to view and bid on real assets.</p>
+        </div>
+    </section>
+
+    <!-- PLATFORM PREVIEW -->
+    <section style="background:#ffffff; padding: 80px 0;">
+        <div class="custom_container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="sub_head_title main_font font_700">A Platform Built for Commercial Asset Professionals
+                    </h2>
+                    <p class="mb-4" style="color:#555; line-height:1.8;">Earth Metals gives you a clean, structured
+                        dashboard to manage listings, track active bids, review inspection reports, and complete
+                        transactions — all from one secure login.</p>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="iconify me-3" data-icon="mdi:check-circle"
+                                style="color:#41A648; font-size:1.4rem; flex-shrink:0;"></span>
+                            <span style="color:#454545;">Real-time bidding dashboard with live updates</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="iconify me-3" data-icon="mdi:check-circle"
+                                style="color:#41A648; font-size:1.4rem; flex-shrink:0;"></span>
+                            <span style="color:#454545;">Detailed inspection reports attached to every listing</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="iconify me-3" data-icon="mdi:check-circle"
+                                style="color:#41A648; font-size:1.4rem; flex-shrink:0;"></span>
+                            <span style="color:#454545;">Secure document management and handover workflows</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <span class="iconify me-3" data-icon="mdi:check-circle"
+                                style="color:#41A648; font-size:1.4rem; flex-shrink:0;"></span>
+                            <span style="color:#454545;">Cross-border support for SA and Zimbabwe transactions</span>
+                        </li>
+                    </ul>
+                    <a href="site/register" class="prim_btn mt-4">Get Platform Access</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="platform-preview-box">
+                        <div class="platform-preview-bar">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="platform-preview-body">
+                            <div class="platform-preview-row">
+                                <div class="platform-preview-stat" style="border-left:3px solid #41A648;">
+                                    <span class="platform-preview-stat__num">23</span>
+                                    <span class="platform-preview-stat__lbl">Live Auctions</span>
+                                </div>
+                                <div class="platform-preview-stat" style="border-left:3px solid #FFCD05;">
+                                    <span class="platform-preview-stat__num">8</span>
+                                    <span class="platform-preview-stat__lbl">My Bids</span>
+                                </div>
+                                <div class="platform-preview-stat" style="border-left:3px solid #41A648;">
+                                    <span class="platform-preview-stat__num">4</span>
+                                    <span class="platform-preview-stat__lbl">Won</span>
+                                </div>
+                            </div>
+                            <div class="platform-preview-table">
+                                <div class="platform-preview-thead">
+                                    <span>Asset</span><span>Bid</span><span>Status</span>
+                                </div>
+                                <div class="platform-preview-trow">
+                                    <span>Volvo FH 540</span><span>R 1.25M</span><span class="badge-live">Live</span>
+                                </div>
+                                <div class="platform-preview-trow">
+                                    <span>CAT 320 Excavator</span><span>R 2.8M</span><span
+                                        class="badge-live">Live</span>
+                                </div>
+                                <div class="platform-preview-trow">
+                                    <span>Fruehauf Tanker</span><span>R 680K</span><span
+                                        class="badge-upcoming">Upcoming</span>
+                                </div>
+                                <div class="platform-preview-trow">
+                                    <span>Bell B30E ADT</span><span>R 1.9M</span><span class="badge-won">Won</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEC 7: HOW IT WORKS -->
+    <section class="pad_top_100 pd_bottom_60 px-0 grouping light-bg">
+        <div class="custom_container">
+            <div class="row mb-5 text-center">
+                <div class="col-sm-12">
+                    <h2 class="sub_head_title main_font font_700"><span class="underlined">Simple.</span> Structured.
+                        Secure.</h2>
+                    <p>The Earth Metals process is designed to remove friction from buying and selling high-value
+                        commercial assets. Here is how it works:</p>
+                </div>
+            </div>
+
+            <!-- Sellers Process -->
+            <div class="mb-5">
+                <div class="d-flex align-items-center mb-4">
+                    <span class="iconify me-2" data-icon="mdi:storefront"
+                        style="color:#41A648; font-size:1.6rem;"></span>
+                    <h3 class="mb-0 font_700" style="color:#41A648;">Process Steps: For Sellers</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="process-card process-card--seller h-100">
+                            <div class="process-card__step" style="background:#41A648;">01</div>
+                            <div class="process-card__icon">
+                                <span class="iconify" data-icon="mdi:account-check"
+                                    style="color:#41A648; font-size:2.2rem;"></span>
+                            </div>
+                            <h4 class="process-card__title">Register &amp; Verify</h4>
+                            <p class="process-card__desc">Create your business account and complete verification.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="process-card process-card--seller h-100">
+                            <div class="process-card__step" style="background:#41A648;">02</div>
+                            <div class="process-card__icon">
+                                <span class="iconify" data-icon="mdi:clipboard-list"
+                                    style="color:#41A648; font-size:2.2rem;"></span>
+                            </div>
+                            <h4 class="process-card__title">List Your Asset</h4>
+                            <p class="process-card__desc">Submit your asset for listing with photos, documentation, and
+                                inspection.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="process-card process-card--seller h-100">
+                            <div class="process-card__step" style="background:#41A648;">03</div>
+                            <div class="process-card__icon">
+                                <span class="iconify" data-icon="mdi:gavel"
+                                    style="color:#41A648; font-size:2.2rem;"></span>
+                            </div>
+                            <h4 class="process-card__title">Auction Goes Live</h4>
+                            <p class="process-card__desc">Qualified buyers bid in real time. You set the reserve. We
+                                manage the process.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="process-card process-card--seller h-100">
+                            <div class="process-card__step" style="background:#41A648;">04</div>
+                            <div class="process-card__icon">
+                                <span class="iconify" data-icon="mdi:hand-coin"
+                                    style="color:#41A648; font-size:2.2rem;"></span>
+                            </div>
+                            <h4 class="process-card__title">Receive Payment &amp; Handover</h4>
+                            <p class="process-card__desc">Secure payment is confirmed before handover. Full
+                                documentation is provided.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buyers Process -->
+            <div>
+                <div class="d-flex align-items-center mb-4">
+                    <span class="iconify me-2" data-icon="mdi:truck-fast"
+                        style="color:#FFCD05; font-size:1.6rem;"></span>
+                    <h3 class="mb-0 font_700" style="color:#b8960a;">Process Steps: For Buyers</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="process-card process-card--buyer h-100">
+                            <div class="process-card__step" style="background:#FFCD05; color:#121212;">01</div>
+                            <div class="process-card__icon">
+                                <span class="iconify" data-icon="mdi:account-check"
+                                    style="color:#FFCD05; font-size:2.2rem;"></span>
+                            </div>
+                            <h4 class="process-card__title">Register &amp; Verify</h4>
+                            <p class="process-card__desc">Create your buyer account and complete business verification.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="process-card process-card--buyer h-100">
+                            <div class="process-card__step" style="background:#FFCD05; color:#121212;">02</div>
+                            <div class="process-card__icon">
+                                <span class="iconify" data-icon="mdi:magnify"
+                                    style="color:#FFCD05; font-size:2.2rem;"></span>
+                            </div>
+                            <h4 class="process-card__title">Browse &amp; Review</h4>
+                            <p class="process-card__desc">Explore current listings with full inspection reports and
+                                asset documentation.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="process-card process-card--buyer h-100">
+                            <div class="process-card__step" style="background:#FFCD05; color:#121212;">03</div>
+                            <div class="process-card__icon">
+                                <span class="iconify" data-icon="mdi:podium"
+                                    style="color:#FFCD05; font-size:2.2rem;"></span>
+                            </div>
+                            <h4 class="process-card__title">Bid in Real Time</h4>
+                            <p class="process-card__desc">Place bids on the assets you want. Watch live bidding and set
+                                your maximum.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="process-card process-card--buyer h-100">
+                            <div class="process-card__step" style="background:#FFCD05; color:#121212;">04</div>
+                            <div class="process-card__icon">
+                                <span class="iconify" data-icon="mdi:truck-delivery"
+                                    style="color:#FFCD05; font-size:2.2rem;"></span>
+                            </div>
+                            <h4 class="process-card__title">Pay &amp; Take Delivery</h4>
+                            <p class="process-card__desc">Complete payment securely and arrange delivery or collection
+                                across the region.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BLUEPRINT NEW SECTIONS END -->
+
+    <!-- TESTIMONIALS -->
+    <section style="background:#121212; padding:80px 0;">
+        <div class="custom_container">
+            <div class="row mb-5 text-center">
+                <div class="col-sm-12">
+                    <h2 class="sub_head_title main_font font_700 white">What Our Clients Say</h2>
+                    <p class="white" style="opacity:0.7; max-width:600px; margin:0 auto;">Trusted by fleet operators,
+                        dealers, and financial institutions across Southern Africa.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">"Earth Metals gave us the fastest fleet disposal we have ever
+                            experienced. Within two weeks, all 14 vehicles were sold at competitive prices through
+                            verified buyers."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">NM</div>
+                            <div>
+                                <strong>N. Moyo</strong>
+                                <span>Fleet Director, Mining Operations · Zimbabwe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">"The inspection reports are thorough and give us complete
+                            confidence when bidding remotely. We sourced three prime movers without leaving
+                            Johannesburg."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">TK</div>
+                            <div>
+                                <strong>T. Khumalo</strong>
+                                <span>Procurement Manager, Logistics Co. · South Africa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">"As a financial institution, we needed a structured,
+                            documented disposal process for repossessed assets. Earth Metals delivered exactly that."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">SR</div>
+                            <div>
+                                <strong>S. Roos</strong>
+                                <span>Asset Finance Executive · South Africa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUSTED BY / PARTNERS -->
+    <section style="background:#f7f8fa; padding:55px 0; border-top:1px solid #eaeaea;">
+        <div class="custom_container">
+            <p class="text-center font_700 mb-4"
+                style="color:#bbb; text-transform:uppercase; letter-spacing:2px; font-size:0.8rem;">Trusted across these
+                sectors</p>
+            <div class="partners-row">
+                <div class="partner-badge"><span class="iconify" data-icon="mdi:hard-hat"
+                        style="font-size:1.4rem;"></span> Mining &amp; Resources</div>
+                <div class="partner-badge"><span class="iconify" data-icon="mdi:crane" style="font-size:1.4rem;"></span>
+                    Construction</div>
+                <div class="partner-badge"><span class="iconify" data-icon="mdi:truck-fast"
+                        style="font-size:1.4rem;"></span> Logistics &amp; Transport</div>
+                <div class="partner-badge"><span class="iconify" data-icon="mdi:sprout"
+                        style="font-size:1.4rem;"></span> Agriculture</div>
+                <div class="partner-badge"><span class="iconify" data-icon="mdi:bank" style="font-size:1.4rem;"></span>
+                    Financial Institutions</div>
+                <div class="partner-badge"><span class="iconify" data-icon="mdi:car-multiple"
+                        style="font-size:1.4rem;"></span> Fleet Dealers</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background:#ffffff; padding:80px 0;">
+        <div class="custom_container">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h2 class="sub_head_title main_font font_700">Frequently Asked Questions</h2>
+                    <p style="color:#555;">Everything you need to know about buying and selling on Earth Metals.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            How long does an auction run?
+                            <span class="iconify faq-icon" data-icon="mdi:chevron-down"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Auctions on Earth Metals typically run for 5–10 business days, giving qualified buyers
+                                sufficient time to review inspection reports and place competitive bids. Specific
+                                auction durations are set per asset.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            How are assets inspected before listing?
+                            <span class="iconify faq-icon" data-icon="mdi:chevron-down"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Every asset undergoes a professional third-party inspection before it is listed. This
+                                includes a full condition report, photographic documentation, service history
+                                verification, and any known defects clearly disclosed.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            What countries do you operate in?
+                            <span class="iconify faq-icon" data-icon="mdi:chevron-down"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We are headquartered in South Africa and Zimbabwe, with operations serving the wider
+                                Southern African region including Botswana, Zambia, Mozambique, and Namibia. Our buyer
+                                and seller network spans 6+ countries.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Is Earth Metals open to individual sellers?
+                            <span class="iconify faq-icon" data-icon="mdi:chevron-down"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Earth Metals is a business-to-business (B2B) platform. Participants must be registered
+                                businesses. This ensures all buyers and sellers are qualified, vetted, and capable
+                                counterparties — protecting every transaction.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            How are payments handled?
+                            <span class="iconify faq-icon" data-icon="mdi:chevron-down"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Payment is confirmed and secured before any asset handover takes place. Our structured
+                                process includes formal documentation at every stage, eliminating risk for both buyer
+                                and seller.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            How do I register?
+                            <span class="iconify faq-icon" data-icon="mdi:chevron-down"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Click "Register" on the platform. You will be guided through our business verification
+                                process. Once approved, you will have immediate access to browse current auctions or
+                                list your first asset — typically within 48 hours.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div style="background:#f7f8fa; border-radius:14px; padding:32px; border:1px solid #eaeaea;">
+                        <span class="iconify mb-3" data-icon="mdi:headset"
+                            style="color:#41A648; font-size:2.5rem;"></span>
+                        <h5 class="font_700 mb-3" style="color:#121212;">Still have questions?</h5>
+                        <p style="color:#666; font-size:0.95rem;">Our team is ready to walk you through the platform,
+                            answer any queries, and help you get started.</p>
+                        <a href="#contactus" class="prim_btn mt-3" style="width:100%; text-align:center;">Contact Our
+                            Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER / ALERT SIGNUP -->
+    <section style="background:linear-gradient(135deg,#1a1a1a 0%,#262626 100%); padding:70px 0;">
+        <div class="custom_container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <span class="iconify mb-3" data-icon="mdi:bell-ring"
+                        style="color:#FFCD05; font-size:2.5rem;"></span>
+                    <h2 class="sub_head_title main_font font_700 white mb-3" style="font-size:1.8rem;">Get Notified When
+                        New Auctions Go Live</h2>
+                    <p class="white mb-4" style="opacity:0.75;">Enter your email and we will alert you the moment new
+                        assets matching your interests are listed on the platform.</p>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <div class="newsletter-form__row">
+                            <input type="email" id="newsletter-email" class="newsletter-form__input"
+                                placeholder="Your business email address" />
+                            <button type="submit" class="newsletter-form__btn">Notify Me</button>
+                        </div>
+                        <p class="newsletter-form__note">No spam. Unsubscribe anytime. B2B only.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMING SOON -->
+    <section
+        style="background:linear-gradient(135deg,#41A648 0%,#2d7a33 60%,#1a4d1e 100%); padding:80px 0; position:relative; overflow:hidden;">
+        <div
+            style="position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,0.04);">
+        </div>
+        <div
+            style="position:absolute;bottom:-80px;left:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.03);">
+        </div>
+        <div class="custom_container" style="position:relative;z-index:1;">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <span
+                        style="display:inline-block; background:rgba(255,205,5,0.18); color:#FFCD05; font-size:0.8rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:20px;">Coming
+                        Soon</span>
+                    <h2 class="sub_head_title main_font font_700 white mb-3" style="font-size:2.2rem;">The Earth Metals
+                        Mobile App</h2>
+                    <p class="white mb-4" style="opacity:0.85; font-size:1.05rem; max-width:520px; line-height:1.8;">
+                        Bid, manage listings, and track your auctions from anywhere. The Earth Metals mobile app is in
+                        development — bringing the full power of the platform to your phone.</p>
+                    <div class="d-flex flex-wrap gap-3 mb-4" style="gap:12px;">
+                        <div class="coming-soon-feature">
+                            <span class="iconify me-2" data-icon="mdi:bell"></span> Live Auction Alerts
+                        </div>
+                        <div class="coming-soon-feature">
+                            <span class="iconify me-2" data-icon="mdi:gavel"></span> One-tap Bidding
+                        </div>
+                        <div class="coming-soon-feature">
+                            <span class="iconify me-2" data-icon="mdi:file-document"></span> Inspection Reports
+                        </div>
+                        <div class="coming-soon-feature">
+                            <span class="iconify me-2" data-icon="mdi:map-marker"></span> Asset Location Tracking
+                        </div>
+                    </div>
+                    <form class="newsletter-form" onsubmit="return false;" style="max-width:480px;">
+                        <div class="newsletter-form__row">
+                            <input type="email" id="app-notify-email" class="newsletter-form__input"
+                                placeholder="Get early access — enter your email" />
+                            <button type="submit" class="newsletter-form__btn"
+                                style="background:#FFCD05;color:#121212;">Notify Me</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <div class="app-mockup">
+                        <div class="app-mockup__phone">
+                            <div class="app-mockup__screen">
+                                <div class="app-mockup__header">
+                                    <span class="iconify" data-icon="mdi:earth"
+                                        style="color:#41A648; font-size:1.2rem;"></span>
+                                    <span style="font-weight:700; font-size:0.9rem;">Earth Metals</span>
+                                    <span class="iconify" data-icon="mdi:bell" style="font-size:1rem;"></span>
+                                </div>
+                                <div class="app-mockup__card">
+                                    <span style="font-size:0.65rem; color:#41A648; font-weight:700;">● LIVE</span>
+                                    <p style="font-weight:700; font-size:0.8rem; margin:4px 0;">Volvo FH 540 Prime Mover
+                                    </p>
+                                    <p style="font-size:0.7rem; color:#888; margin:0;">Current Bid: <strong
+                                            style="color:#121212;">R 1,250,000</strong></p>
+                                    <div
+                                        style="background:#41A648; color:#fff; border-radius:6px; padding:6px; text-align:center; font-size:0.7rem; font-weight:700; margin-top:8px;">
+                                        Place Bid</div>
+                                </div>
+                                <div class="app-mockup__card">
+                                    <span style="font-size:0.65rem; color:#FFCD05; font-weight:700;">◌ UPCOMING</span>
+                                    <p style="font-weight:700; font-size:0.8rem; margin:4px 0;">CAT 320 Excavator</p>
+                                    <p style="font-size:0.7rem; color:#888; margin:0;">Opens in: <strong
+                                            style="color:#121212;">2d 4h 30m</strong></p>
+                                    <div
+                                        style="border:1px solid #41A648; color:#41A648; border-radius:6px; padding:6px; text-align:center; font-size:0.7rem; font-weight:700; margin-top:8px;">
+                                        Watch Auction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactus" class="pad_bottom_100 pad_top_100 grouping light-bg">
+
+        <div class="custom_container">
+
+            <div class="row">
+
+                <div class="col-md-7 col-sm-12">
+
+                    <img src="themes/oxygen/images/contact.webp" class="contact-img" alt="...">
+
+                </div>
+
+                <div class="col-md-5 col-sm-12">
+
+                    <div>
+
+                        <p class="sub_head_title main_font font_700"><span class="underlined">Initiate</span> Your
+                            Project</p>
+                        <p class="font_18_28 mb-5 font_400">Submit project details and receive a response within 24
+                            hours to begin building tailored growth solutions.</p>
+
+                        <form class="form-vertical" id="contact-form" action="site/index" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 mb-4">
+                                    <label for="ContactForm_fullname" class="required">Full Name <span
+                                            class="required">*</span></label><input placeholder="Full Name"
+                                        name="ContactForm[fullname]" id="ContactForm_fullname" type="text" />
+                                    <div class="help-block error" id="ContactForm_fullname_em_" style="display:none">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 mb-4">
+                                    <label for="ContactForm_lastname">Last Name</label><input placeholder="Last Name"
+                                        name="ContactForm[lastname]" id="ContactForm_lastname" type="text" />
+                                    <div class="help-block error" id="ContactForm_lastname_em_" style="display:none">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <label for="ContactForm_email" class="required">Email Address <span
+                                            class="required">*</span></label><input placeholder="Email Address"
+                                        name="ContactForm[email]" id="ContactForm_email" type="text" />
+                                    <div class="help-block error" id="ContactForm_email_em_" style="display:none"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <label for="ContactForm_cellphone" class="required">Mobile Number <span
+                                            class="required">*</span></label><input placeholder="Mobile Number"
+                                        name="ContactForm[cellphone]" id="ContactForm_cellphone" type="text" />
+                                    <div class="help-block error" id="ContactForm_cellphone_em_" style="display:none">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="ContactForm_message" class="required">Message <span
+                                        class="required">*</span></label><textarea rows="5" cols="30"
+                                    placeholder="Message" name="ContactForm[message]"
+                                    id="ContactForm_message"></textarea>
+                                <div class="help-block error" id="ContactForm_message_em_" style="display:none"></div>
+                            </div>
+                            <div class="mb-4">
+                                <input id="ContactForm_reCaptcha" type="hidden" name="ContactForm[reCaptcha]" />
+                                <div class="g-recaptcha" data-sitekey="6LeZfRsUAAAAAMVEOirM63JM6jvSS_UwoGZXN1KU"
+                                    data-callback="recaptchaCallback" data-expired-callback="recaptchaExpiredCallback">
+                                </div>
+                            </div>
+                            <div class="mb-4 form-check">
+                                <input id="ytContactForm_termsCheck" type="hidden" value="0"
+                                    name="ContactForm[termsCheck]" /><label class="checkbox"><input value="1"
+                                        name="ContactForm[termsCheck]" id="ContactForm_termsCheck" type="checkbox" />You
+                                    agree to our friendly <a href="site/terms" target="_blank"
+                                        class="policy_link"">privacy policy.</a></label><div class=" help-block error"
+                                        id="ContactForm_termsCheck_em_" style="display:none">
+                            </div>
+                    </div>
+
+                    <button type="submit" class="btn contact_form_btn">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Update the count down every 1 second
+            const x = setInterval(function () {
+                const elements = document.getElementsByClassName("endDateTimer");
+                for (let i = 0; i < elements.length; i++) {
+                    const endDate = elements[i].dataset.endDate;
+                    const vehicleId = elements[i].dataset.vehicleId;
+                    document.getElementById(vehicleId).innerHTML = getCountDown(endDate);
+                }
+            }, 1000);
+        });
+
+        function getCountDown(endDate) {
+
+            const countDownDate = new Date(endDate);
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Find the time between now and the count down date
+            const time = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(time / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((time % (1000 * 60)) / 1000);
+
+            // If the count down is over, write some text
+            if (Math.sign(days) == -1 || Math.sign(hours) == -1 || Math.sign(minutes) == -1 || Math.sign(seconds) == -1) {
+                return "EXPIRED";
+            }
+
+            // Output the result in an element with id="demo"
+            return `${days}d | ${hours}h | ${minutes}m | ${seconds}s`
+        }
+
+    </script>
+
+
+
+
+    <footer class="footer_container">
+        <div class="custom_container">
+            <div class="row pd_top_20">
+                <div class="col-lg-4 col-md-12 mb-5">
+                    <img src="themes/oxygen/images/logo.png" class="logo_img_footer mb-4" alt="...">
+                    <p class="font_18_28 white">Southern Africa's Specialist Marketplace for Commercial Vehicles & Heavy
+                        Equipment.</p>
+                    <div class="mt-4">
+                        <a class="prim_btn" href="site/login">Login</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-5">
+                    <h5 class="white font_700 mb-4 uppercase" style="font-size: 1.1rem; letter-spacing: 1px;">Quick
+                        Links
+                    </h5>
+                    <div class="navbar-nav footer_nav flex-column">
+                        <a class="nav-link py-2" href="site/index#home">Home</a>
+                        <a class="nav-link py-2" href="site/index#aboutus">About Us</a>
+                        <a class="nav-link py-2" href="site/index#auction">Auction</a>
+                        <a class="nav-link py-2" href="site/index#contactus">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <h5 class="white font_700 mb-3 uppercase" style="font-size: 1.1rem; letter-spacing: 1px;">Connect
+                        with
+                        Our Regional Offices</h5>
+                    <p class="white font_400 mb-4" style="opacity: 0.8; font-size: 0.95rem;">Our teams in South Africa
+                        and
+                        Zimbabwe are ready to assist with your fleet procurement and disposal needs.</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h6 class="font_700 mb-3"
+                                style="color: #41A648; text-transform: uppercase; font-size: 0.9rem;">
+                                South Africa Office</h6>
+                            <p class="white font_14_20 mb-2" style="opacity: 0.8;">Unit 1, 1st Floor, 187 Witch-Hazel
+                                Ave, Highveld, Centurion, 0157</p>
+                            <p class="white font_14_20 mb-1" style="opacity: 0.8;"><strong>Phone:</strong> +27 10 593
+                                4591</p>
+                            <p class="white font_14_20" style="opacity: 0.8;"><strong>Email:</strong>
+                                office@earth-metals.com</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h6 class="font_700 mb-3"
+                                style="color: #FFCD05; text-transform: uppercase; font-size: 0.9rem;">
+                                Zimbabwe Office</h6>
+                            <p class="white font_14_20 mb-2" style="opacity: 0.8;">16 Woodholme Road, Emerald Hill,
+                                Harare</p>
+                            <p class="white font_14_20 mb-1" style="opacity: 0.8;"><strong>Phone:</strong> +263 77 221
+                                0000</p>
+                            <p class="white font_14_20" style="opacity: 0.8;"><strong>Email:</strong>
+                                zim@earth-metals.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pd_bottom_20 pd_top_40">
+                <hr class="white" style="opacity: 0.1;">
+                <div class="d-flex flex-wrap justify-content-between pd_top_20 footer_lower">
+                    <p class="white mb-3">© 2026 Earth Metals. All rights reserved.</p>
+                    <div class="d-flex footer_nav">
+                        <a class="nav-link" href="site/terms">Terms</a>
+                        <a class="nav-link" href="site/terms/#privacy">Privacy</a>
+                        <a class="nav-link" href="site/terms/#cookies">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // Card Slider
+
+            $('.home_slide').slick({
+                infinite: false,
+                speed: 300,
+                arrows: true,
+                slidesToShow: 3,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToScroll: 1,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+                responsive: [
+                    {
+                        breakpoint: 1077,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 552,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            arrows: false,
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+            // Testimonal
+
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        jQuery(function ($) {
+            jQuery('[data-toggle=popover]').popover();
+            jQuery('body').tooltip({ "selector": "[data-toggle=tooltip]" });
+
+            window.cueWidgetConfig = {
+                id: 'dd01d7fe-866f-496c-b1a0-8f55774eabd0',
+                onReady: function () {
+                    // Set custom data to be included in a new session
+                    CueWidget.updateInitialSessionData({
+                        siteUrl: 'www.earth-metals.com',
+                    });
+                }
+            };
+
+            var s = document.createElement('script');
+            s.dataset.cueWidgetScript = 'true';
+
+            if (window.requirejs && window.requirejs.defined) {
+                s.src = 'https://webchat.cuedesk.com/widget.iife.js';
+            } else {
+                s.src = 'https://webchat.cuedesk.com/widget.js';
+            }
+            document.head.appendChild(s);
+
+            jQuery('#contact-form').yiiactiveform({
+                'validateOnSubmit': true, 'attributes': [{
+                    'id': 'ContactForm_fullname', 'inputID': 'ContactForm_fullname', 'errorID': 'ContactForm_fullname_em_', 'model': 'ContactForm', 'name': 'fullname', 'enableAjaxValidation': false, 'clientValidation': function (value, messages, attribute) {
+
+                        if (jQuery.trim(value) == '') {
+                            messages.push("Full Name cannot be blank.");
+                        }
+
+                    }
+                }, { 'id': 'ContactForm_lastname', 'inputID': 'ContactForm_lastname', 'errorID': 'ContactForm_lastname_em_', 'model': 'ContactForm', 'name': 'lastname', 'enableAjaxValidation': false }, {
+                    'id': 'ContactForm_email', 'inputID': 'ContactForm_email', 'errorID': 'ContactForm_email_em_', 'model': 'ContactForm', 'name': 'email', 'enableAjaxValidation': false, 'clientValidation': function (value, messages, attribute) {
+
+                        if (jQuery.trim(value) == '') {
+                            messages.push("Email Address cannot be blank.");
+                        }
+
+
+
+                        if (jQuery.trim(value) != '' && !value.match(/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/)) {
+                            messages.push("Email Address is not a valid email address.");
+                        }
+
+                    }
+                }, {
+                    'id': 'ContactForm_cellphone', 'inputID': 'ContactForm_cellphone', 'errorID': 'ContactForm_cellphone_em_', 'model': 'ContactForm', 'name': 'cellphone', 'enableAjaxValidation': false, 'clientValidation': function (value, messages, attribute) {
+
+                        if (jQuery.trim(value) == '') {
+                            messages.push("Mobile Number cannot be blank.");
+                        }
+
+                    }
+                }, {
+                    'id': 'ContactForm_message', 'inputID': 'ContactForm_message', 'errorID': 'ContactForm_message_em_', 'model': 'ContactForm', 'name': 'message', 'enableAjaxValidation': false, 'clientValidation': function (value, messages, attribute) {
+
+                        if (jQuery.trim(value) == '') {
+                            messages.push("Message cannot be blank.");
+                        }
+
+                    }
+                }, {
+                    'id': 'ContactForm_termsCheck', 'inputID': 'ContactForm_termsCheck', 'errorID': 'ContactForm_termsCheck_em_', 'model': 'ContactForm', 'name': 'termsCheck', 'enableAjaxValidation': false, 'clientValidation': function (value, messages, attribute) {
+
+                        if (jQuery.trim(value) == '') {
+                            messages.push("Terms Check cannot be blank.");
+                        }
+
+                    }
+                }], 'errorCss': 'error'
+            });
+        });
+        /*]]>*/
+    </script>
+
+    <script src="script.js" defer></script>
+</body>
