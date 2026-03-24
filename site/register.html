@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Metals | Register</title>
+    <meta name="description" content="Register for the Earth Metals B2B heavy asset auction platform - free for buyers and sellers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #454545;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #eaeaea;
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+        .nav-logo img { height: 40px; }
+        .nav-links { display: flex; gap: 30px; list-style: none; }
+        .nav-links a {
+            color: #454545;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #41A648; }
+
+        /* MAIN */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 120px 20px 80px;
+            background: #fdfdfd;
+        }
+
+        .register-wrapper {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* HEADER */
+        .register-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .register-header .badge {
+            display: inline-block;
+            background: rgba(65,166,72,0.1);
+            color: #41A648;
+            border: 1px solid rgba(65,166,72,0.2);
+            border-radius: 20px;
+            padding: 6px 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+        }
+        .register-header h1 {
+            color: #121212;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        .register-header p {
+            color: #888;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        /* CARD */
+        .register-card {
+            background: #ffffff;
+            border: 1px solid #eee;
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+        }
+
+        /* TYPE TOGGLE */
+        .type-toggle {
+            display: flex;
+            background: #f5f5f5;
+            border-radius: 12px;
+            padding: 6px;
+            margin-bottom: 40px;
+        }
+        .type-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: transparent;
+            color: #888;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .type-btn.active {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            font-weight: 700;
+        }
+        .type-btn.active[data-type="buyer"] { background: #41A648; color: white; }
+        .type-btn.active[data-type="seller"] { background: #FFCD05; color: #121212; }
+
+        /* FORM */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 20px;
+        }
+        .form-group { margin-bottom: 24px; }
+        .form-group.full { grid-column: 1 / -1; }
+        .form-group label {
+            display: block;
+            color: #121212;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 14px 18px;
+            color: #121212;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.2s;
+            outline: none;
+            appearance: none;
+        }
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #41A648;
+            background: #ffffff;
+            box-shadow: 0 0 0 4px rgba(65,166,72,0.05);
+        }
+        .form-group input::placeholder { color: #aaa; }
+
+        .divider-label {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin: 15px 0 35px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .divider-label hr { flex:1; border:none; border-top: 1px solid #eee; }
+
+        /* TERMS */
+        .terms-check {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+        .terms-check input[type="checkbox"] {
+            width: 18px; height: 18px;
+            margin-top: 4px;
+            accent-color: #41A648;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .terms-check label {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            cursor: pointer;
+        }
+        .terms-check label a { color: #41A648; text-decoration: none; font-weight: 600; }
+        .terms-check label a:hover { text-decoration: underline; }
+
+        /* BUTTON STYLE */
+        .btn-register {
+            width: 100%;
+            background: #121212;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 18px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .btn-register:hover { background: #333; transform: translateY(-2px); box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
+
+        .login-link {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.95rem;
+        }
+        .login-link a { color: #41A648; text-decoration: none; font-weight: 700; }
+        .login-link a:hover { text-decoration: underline; }
+
+        /* TRUST BAR */
+        .trust-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #aaa;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .trust-item .iconify { color: #41A648; font-size: 1.2rem; }
+
+        /* FOOTER */
+        footer {
+            background: #ffffff;
+            border-top: 1px solid #eee;
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 800px) {
+            .register-card { padding: 35px 25px; }
+            .form-grid { grid-template-columns: 1fr; }
+            .register-header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html" class="nav-logo">
+        <img src="../themes/oxygen/images/logo.png" alt="Earth Metals">
+    </a>
+    <ul class="nav-links">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#aboutus">About Us</a></li>
+        <li><a href="../index.html#auction">Auction</a></li>
+        <li><a href="../index.html#contactus">Contact Us</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="register-wrapper">
+        <div class="register-header">
+            <div class="badge">Free Registration</div>
+            <h1>Create Your Earth Metals Account</h1>
+            <p>Join Southern Africa's leading B2B heavy asset marketplace</p>
+        </div>
+
+        <div class="register-card">
+
+            <!-- Account type toggle -->
+            <div class="type-toggle">
+                <button class="type-btn active" data-type="buyer" onclick="setType('buyer', this)">
+                    <span class="iconify" data-icon="mdi:gavel"></span> I'm a Buyer
+                </button>
+                <button class="type-btn" data-type="seller" onclick="setType('seller', this)">
+                    <span class="iconify" data-icon="mdi:storefront"></span> I'm a Seller
+                </button>
+            </div>
+
+            <form id="registerForm" onsubmit="handleRegister(event)">
+                <!-- Personal details -->
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" placeholder="John" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" placeholder="Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="you@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile Number *</label>
+                        <input type="tel" id="phone" placeholder="+27 84 000 0000" required>
+                    </div>
+                </div>
+
+                <div class="divider-label"><hr>Company Details<hr></div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="company">Company Name *</label>
+                        <input type="text" id="company" placeholder="Your Company (Pty) Ltd" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country *</label>
+                        <select id="country" required>
+                            <option value="" disabled selected>Select country</option>
+                            <option value="za">South Africa</option>
+                            <option value="zw">Zimbabwe</option>
+                            <option value="bw">Botswana</option>
+                            <option value="zm">Zambia</option>
+                            <option value="mz">Mozambique</option>
+                            <option value="na">Namibia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="industry">Industry *</label>
+                        <select id="industry" required>
+                            <option value="" disabled selected>Select industry</option>
+                            <option>Mining & Resources</option>
+                            <option>Construction</option>
+                            <option>Logistics & Transport</option>
+                            <option>Agriculture</option>
+                            <option>Fleet Dealer / Reseller</option>
+                            <option>Financial Institution</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Create Password *</label>
+                        <input type="password" id="password" placeholder="Min. 8 characters" required minlength="8">
+                    </div>
+                </div>
+
+                <!-- Terms -->
+                <div class="terms-check">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">
+                        I agree to the Earth Metals <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>. 
+                        I confirm that I am registering on behalf of a legitimate business entity.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-register" id="submitBtn">
+                    <span class="iconify" data-icon="mdi:check-circle"></span>
+                    Create My Account - It's Free
+                </button>
+            </form>
+
+            <p class="login-link">Already have an account? <a href="login.html">Sign in here</a></p>
+
+            <div class="trust-bar">
+                <div class="trust-item"><span class="iconify" data-icon="mdi:lock"></span> Secure & Encrypted</div>
+                <div class="trust-item"><span class="iconify" data-icon="mdi:check-decagram"></span> Verified B2B Only</div>
+                <div class="trust-item"><span class="iconify" data-icon="mdi:clock-fast"></span> Live within 48hrs</div>
+                <div class="trust-item"><span class="iconify" data-icon="mdi:currency-usd-off"></span> No Hidden Fees</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2026 Earth Metals. All rights reserved. <br>
+    <span style="font-size: 0.8rem; margin-top: 8px; display: inline-block;">Southern Africa's Specialist B2B Asset Marketplace</span>
+</footer>
+
+<script>
+    function setType(type, el) {
+        document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+        el.classList.add('active');
+        
+        const btn = document.getElementById('submitBtn');
+        if (type === 'seller') {
+            btn.style.background = '#FFCD05';
+            btn.style.color = '#121212';
+        } else {
+            btn.style.background = '#121212';
+            btn.style.color = '#ffffff';
+        }
+    }
+
+    function handleRegister(e) {
+        e.preventDefault();
+        const btn = document.getElementById('submitBtn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<span class="iconify" data-icon="mdi:loading" class="rotate"></span> Submitting...';
+        btn.disabled = true;
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+            alert('Registration is processed through the live Earth Metals platform. You will be redirected to complete your setup.');
+        }, 1500);
+    }
+</script>
+
+</body>
+</html>
