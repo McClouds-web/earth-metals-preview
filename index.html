@@ -380,6 +380,39 @@
             line-height: 1.6 !important;
             margin: 0 !important;
         }
+
+        /* ---- Mobile overrides ---- */
+        @media (max-width: 767px) {
+            :root { --section-pad: 60px 0; }
+
+            h1, .h1 { font-size: 1.9rem !important; line-height: 1.25 !important; }
+            h2, .h2 { font-size: 1.6rem !important; }
+            h3, .h3 { font-size: 1.2rem !important; }
+
+            /* Hero buttons stack */
+            .hero-btn-container { flex-direction: column !important; gap: 12px !important; }
+            .em-btn { width: 100% !important; min-width: unset !important; }
+
+            /* Sub-hero info bar */
+            .trust-bar { justify-content: flex-start; gap: 12px; }
+
+            /* Stats bar */
+            .stat-number, .stat-suffix { font-size: 1.8rem !important; }
+
+            /* About section image */
+            .about_img { min-height: 250px !important; }
+
+            /* Contact section */
+            .contact-img { max-width: 100%; }
+
+            /* Solution cards full width */
+            .solution-card { padding: 24px 16px !important; }
+        }
+
+        @media (max-width: 480px) {
+            h1, .h1 { font-size: 1.6rem !important; }
+            .stat-number, .stat-suffix { font-size: 1.4rem !important; }
+        }
     </style>
 </head>
 
