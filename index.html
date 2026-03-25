@@ -799,14 +799,13 @@
     <style>
         .about-carousel {
             position: relative;
-            overflow: hidden;
             width: 100%;
         }
 
         .about-slide {
             display: none;
             width: 100%;
-            animation: aboutFade 1s;
+            animation: aboutFade 1s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .about-slide.active {
@@ -814,54 +813,79 @@
         }
 
         @keyframes aboutFade {
-            from { opacity: 0.4; }
-            to { opacity: 1; }
+            from { opacity: 0.1; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .about-dots {
-            text-align: center;
-            padding: 20px 0;
-            margin-top: -40px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .about-dot {
-            height: 12px;
-            width: 12px;
-            margin: 0 5px;
-            background-color: #bbb;
+        /* About Arrow Navigation */
+        .about-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            background: #fff;
+            border: 1px solid #eee;
+            color: var(--dark-grey);
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
-            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
 
-        .about-dot.active {
-            background-color: var(--primary-green);
-            transform: scale(1.2);
+        .about-nav-btn:hover {
+            background: var(--primary-green);
+            color: #fff;
+            border-color: var(--primary-green);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .about-nav-prev { left: 20px; }
+        .about-nav-next { right: 20px; }
+
+        @media (max-width: 991px) {
+            .about-nav-btn { display: none; }
         }
     </style>
 
-    <section id="aboutus" class="section-padding grouping">
+    <section id="aboutus" class="section-padding grouping" style="position: relative; overflow: hidden;">
+        
+        <!-- About Navigation Arrows -->
+        <button class="about-nav-btn about-nav-prev" id="aboutPrev" aria-label="Previous About Slide">
+            <span class="iconify" data-index="prev" data-icon="mdi:chevron-left" style="font-size: 1.5rem;"></span>
+        </button>
+        <button class="about-nav-btn about-nav-next" id="aboutNext" aria-label="Next About Slide">
+            <span class="iconify" data-index="next" data-icon="mdi:chevron-right" style="font-size: 1.5rem;"></span>
+        </button>
+
         <div class="about-carousel" id="aboutCarousel">
             
-            <!-- Slide 1 -->
+            <!-- Slide 1: General Overview -->
             <div class="about-slide active">
                 <div class="custom_container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-5 padding_right_80">
+                        <div class="col-lg-6 col-md-5" style="padding-right: 60px;">
                             <div class="about_img"
-                                style="background-image: url('themes/oxygen/images/about_us_truck.jpg'); background-size: cover; background-position: center; border-radius: 12px; min-height: 450px; position: relative;">
+                                style="background-image: url('themes/oxygen/images/about_us_truck.jpg') !important; background-size: cover !important; background-position: center !important; border-radius: 20px; min-height: 500px; position: relative; box-shadow: 0 15px 45px rgba(0,0,0,0.1);">
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-7 mobile_order_2">
+                        <div class="col-lg-6 col-md-7 mobile_order_2" style="padding-left: 40px;">
                             <div>
                                 <h2 class="mb-4"><span class="underlined">About</span> Earth Metals</h2>
                                 <h3 class="mb-4" style="font-weight: 600;">The Specialist Marketplace for Heavy Assets.</h3>
-                                <p>Earth Metals exists with a strong African identity, built to mobilize African markets and tap into potential beyond borders. We are dedicated to connecting people and businesses across the continent through a reliable, professional auction platform for commercial vehicles and heavy equipment.</p>
-                                <p class="mb-5">By combining professional inspections with a structured bidding process, we ensure that every transaction is grounded in trust, clarity, and market-driven value. We bridge the gap between fleet owners, dealers, and buyers, providing the tools and network to trade with confidence across the SADC region.</p>
+                                <p class="mb-4" style="font-size: 1.05rem;">Earth Metals exists with a strong African identity, built to mobilize African markets and tap into potential beyond borders. We connect people and businesses across the continent through a reliable auction platform.</p>
+                                
+                                <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
+                                    <li style="margin-bottom: 12px; font-weight: 500; color: #121212;"><span class="iconify" data-icon="mdi:check-decagram" style="color:var(--primary-green); margin-right:10px; font-size: 1.2rem;"></span> Professional Asset Inspections</li>
+                                    <li style="margin-bottom: 12px; font-weight: 500; color: #121212;"><span class="iconify" data-icon="mdi:check-decagram" style="color:var(--primary-green); margin-right:10px; font-size: 1.2rem;"></span> Structured Bidding Process</li>
+                                    <li style="font-weight: 500; color: #121212;"><span class="iconify" data-icon="mdi:check-decagram" style="color:var(--primary-green); margin-right:10px; font-size: 1.2rem;"></span> Transparent & Secure Transactions</li>
+                                </ul>
+
+                                <p class="mb-5" style="opacity: 0.85;">We bridge the gap between fleet owners, dealers, and buyers, providing the tools and network to trade with confidence across the SADC region. Your gateway to cross-border heavy asset trading.</p>
                                 <a class="em-btn em-btn-primary" href="site/register.html">Learn More About Our Process</a>
                             </div>
                         </div>
@@ -869,26 +893,28 @@
                 </div>
             </div>
 
-            <!-- Slide 2 -->
+            <!-- Slide 2: Connectivity & Infrastructure -->
             <div class="about-slide">
                 <div class="custom_container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-5 padding_right_80">
+                        <div class="col-lg-6 col-md-5" style="padding-right: 60px;">
                             <div class="about_img"
-                                style="background-image: url('themes/oxygen/images/about_us_bridge_truck.jpg'); background-size: cover; background-position: center; border-radius: 12px; min-height: 450px; position: relative;">
+                                style="background-image: url('themes/oxygen/images/about_us_bridge_truck.jpg') !important; background-size: cover !important; background-position: center !important; border-radius: 20px; min-height: 500px; position: relative; box-shadow: 0 15px 45px rgba(0,0,0,0.1);">
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-7 mobile_order_2">
+                        <div class="col-lg-6 col-md-7 mobile_order_2" style="padding-left: 40px;">
                             <div>
                                 <h2 class="mb-4"><span class="underlined">About</span> Us</h2>
                                 <h3 class="mb-4" style="font-weight: 600;">We believe Africa’s markets are stronger when they are connected.</h3>
-                                <p>Headquartered in South Africa, Earth Metals was built to unlock the movement of commercial vehicles and equipment across the SADC region. From Zimbabwe to Botswana, Namibia to Zambia, businesses face the same challenge: <strong>access.</strong></p>
-                                <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
-                                    <li style="margin-bottom: 8px;"><span class="iconify" data-icon="mdi:check-circle" style="color:var(--primary-green); margin-right:8px;"></span> Access to trusted buyers.</li>
-                                    <li style="margin-bottom: 8px;"><span class="iconify" data-icon="mdi:check-circle" style="color:var(--primary-green); margin-right:8px;"></span> Access to quality assets.</li>
-                                    <li><span class="iconify" data-icon="mdi:check-circle" style="color:var(--primary-green); margin-right:8px;"></span> Access beyond their immediate borders.</li>
+                                <p class="mb-4" style="font-size: 1.05rem;">Headquartered in South Africa, Earth Metals was built to unlock the movement of commercial vehicles and equipment across the SADC region. We solve the challenge of access.</p>
+                                
+                                <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
+                                    <li style="margin-bottom: 12px; font-weight: 500; color: #121212;"><span class="iconify" data-icon="mdi:earth" style="color:var(--primary-green); margin-right:10px; font-size: 1.2rem;"></span> Access to trusted buyers.</li>
+                                    <li style="margin-bottom: 12px; font-weight: 500; color: #121212;"><span class="iconify" data-icon="mdi:truck-check" style="color:var(--primary-green); margin-right:10px; font-size: 1.2rem;"></span> Access to quality assets.</li>
+                                    <li style="font-weight: 500; color: #121212;"><span class="iconify" data-icon="mdi:map-marker-distance" style="color:var(--primary-green); margin-right:10px; font-size: 1.2rem;"></span> Access beyond immediate borders.</li>
                                 </ul>
-                                <p class="mb-4">By connecting vetted buyers and sellers through a structured, auction-driven marketplace, we are enabling faster transactions, transparent pricing, and cross-border trade at scale. <strong>This is more than a platform—it is infrastructure for how commercial assets move across Africa.</strong></p>
+
+                                <p class="mb-5" style="opacity: 0.85;">By connecting vetted partners through a structured marketplace, we enable faster transactions and trade at scale. This is infrastructure for how commercial assets move across Africa.</p>
                                 <a class="em-btn em-btn-primary" href="site/register.html">Get Started Now</a>
                             </div>
                         </div>
@@ -898,24 +924,16 @@
 
         </div>
 
-        <div class="about-dots" id="aboutDots">
-            <button class="about-dot active" data-index="0" aria-label="About Slide 1"></button>
-            <button class="about-dot" data-index="1" aria-label="About Slide 2"></button>
-        </div>
-
         <script>
             (function () {
                 const aboutSlides = document.querySelectorAll('#aboutCarousel .about-slide');
-                const aboutDots = document.querySelectorAll('#aboutDots .about-dot');
                 let aboutCurrent = 0;
                 let aboutTimer;
 
                 function goToAbout(index) {
                     aboutSlides[aboutCurrent].classList.remove('active');
-                    aboutDots[aboutCurrent].classList.remove('active');
                     aboutCurrent = (index + aboutSlides.length) % aboutSlides.length;
                     aboutSlides[aboutCurrent].classList.add('active');
-                    aboutDots[aboutCurrent].classList.add('active');
                 }
 
                 function startAboutTimer() {
@@ -927,11 +945,14 @@
                     startAboutTimer();
                 }
 
-                aboutDots.forEach(dot => {
-                    dot.addEventListener('click', () => { 
-                        goToAbout(parseInt(dot.dataset.index)); 
-                        resetAboutTimer(); 
-                    });
+                document.getElementById('aboutNext').addEventListener('click', () => { 
+                    goToAbout(aboutCurrent + 1); 
+                    resetAboutTimer(); 
+                });
+
+                document.getElementById('aboutPrev').addEventListener('click', () => { 
+                    goToAbout(aboutCurrent - 1); 
+                    resetAboutTimer(); 
                 });
 
                 startAboutTimer();
