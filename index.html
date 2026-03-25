@@ -462,30 +462,215 @@
     <title>Earth Metals: Specialist Marketplace for Heavy Assets</title>
 
 
-    <section id="home" class="home_banner grouping dark-bg">
+    <!-- HERO SLIDESHOW -->
+    <style>
+        .hero-slideshow {
+            position: relative;
+            width: 100%;
+            height: 775px;
+            overflow: hidden;
+            margin-top: -110px;
+        }
 
-        <div class="custom_container">
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            z-index: 1;
+        }
 
-            <div class="row">
-                <div class="col-md-12 d-flex align-items-center">
-                    <div class="head_CTA">
-                        <h1 class="white mb-4">Access to quality commercial vehicles, equipment and qualified buyers.</h1>
-                        <div>
-                            <p class="mb-5 white font_400" style="max-width: 580px; font-size: 1.15rem; line-height: 1.6; opacity: 0.9;">Quality commercial vehicles and equipment directly from OEMs, distributors, dealers, and financial institutions. Our platform hosts an expansive pool of vetted buyers from across the SADC region.</p>
-                            <div class="d-flex flex-wrap align-items-center hero-btn-container" style="gap: 20px; margin-top: 40px;">
-                                <a class="em-btn em-btn-seller" href="site/register.html?type=seller">I'm a Seller</a>
-                                <a class="em-btn em-btn-buyer" href="site/register.html?type=buyer">I'm a Buyer</a>
+        .hero-slide.active {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .hero-slide::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.1) 100%);
+            z-index: 0;
+        }
+
+        .hero-slide .slide-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+
+        /* Slide nav dots */
+        .hero-dots {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .hero-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0;
+        }
+
+        .hero-dot.active {
+            background: #41A648;
+            transform: scale(1.3);
+        }
+
+        /* Slide arrows */
+        .hero-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.25);
+            color: #fff;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .hero-arrow:hover {
+            background: rgba(65,166,72,0.7);
+            border-color: #41A648;
+        }
+
+        .hero-arrow.prev { left: 24px; }
+        .hero-arrow.next { right: 24px; }
+
+        @media (max-width: 767px) {
+            .hero-slideshow { height: 580px; }
+            .hero-arrow { display: none; }
+        }
+    </style>
+
+    <section id="home" class="grouping dark-bg" style="padding:0; position:relative;">
+        <div class="hero-slideshow" id="heroSlideshow">
+
+            <!-- SLIDE 1: Original -->
+            <div class="hero-slide active" style="background-image: url('themes/oxygen/images/header.webp');">
+                <div class="slide-content custom_container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-7 d-flex align-items-center">
+                            <div class="head_CTA">
+                                <h1 class="white mb-4">Access to quality commercial vehicles, equipment and qualified buyers.</h1>
+                                <p class="mb-5 white font_400" style="max-width: 580px; font-size: 1.15rem; line-height: 1.6; opacity: 0.9;">Quality commercial vehicles and equipment directly from OEMs, distributors, dealers, and financial institutions. Our platform hosts an expansive pool of vetted buyers from across the SADC region.</p>
+                                <div class="d-flex flex-wrap align-items-center hero-btn-container" style="gap: 20px; margin-top: 40px;">
+                                    <a class="em-btn em-btn-seller" href="site/register.html?type=seller">I'm a Seller</a>
+                                    <a class="em-btn em-btn-buyer" href="site/register.html?type=buyer">I'm a Buyer</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Image/Video column placeholder -->
-                <div class="col-md-12 col-lg-5 p-0"></div>
-
             </div>
 
+            <!-- SLIDE 2: SADC Commercial Vehicles -->
+            <div class="hero-slide" style="background-image: url('themes/oxygen/images/hero_slide2.jpg');">
+                <div class="slide-content custom_container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-7 d-flex align-items-center">
+                            <div class="head_CTA">
+                                <h1 class="white mb-4">Buy and Sell Commercial Vehicles Across SADC—Faster, Smarter, at Market Price</h1>
+                                <p class="mb-5 white font_400" style="max-width: 620px; font-size: 1.15rem; line-height: 1.6; opacity: 0.9;">Powered from South Africa, Earth Metals connects quality vehicles and equipment from OEMs, dealers, and financial institutions with verified buyers across Zimbabwe, Botswana, Namibia, Zambia, and the broader SADC region.</p>
+                                <div class="d-flex flex-wrap align-items-center hero-btn-container" style="gap: 20px; margin-top: 40px;">
+                                    <a class="em-btn em-btn-seller" href="site/register.html?type=seller">I'm a Seller</a>
+                                    <a class="em-btn em-btn-buyer" href="site/register.html?type=buyer">I'm a Buyer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3: Placeholder (content to be added) -->
+            <div class="hero-slide" style="background-image: url('themes/oxygen/images/header.webp'); filter: brightness(0.85);">
+                <div class="slide-content custom_container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-7 d-flex align-items-center">
+                            <div class="head_CTA">
+                                <h1 class="white mb-4">Slide 3 — Coming Soon</h1>
+                                <p class="mb-5 white font_400" style="max-width: 580px; font-size: 1.15rem; line-height: 1.6; opacity: 0.9;">Content for the third slide will be added here.</p>
+                                <div class="d-flex flex-wrap align-items-center hero-btn-container" style="gap: 20px; margin-top: 40px;">
+                                    <a class="em-btn em-btn-seller" href="site/register.html?type=seller">I'm a Seller</a>
+                                    <a class="em-btn em-btn-buyer" href="site/register.html?type=buyer">I'm a Buyer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="hero-arrow prev" id="heroPrev" aria-label="Previous slide">&#8592;</button>
+            <button class="hero-arrow next" id="heroNext" aria-label="Next slide">&#8594;</button>
+
+            <!-- Dots -->
+            <div class="hero-dots" id="heroDots">
+                <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+                <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+                <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+            </div>
         </div>
 
+        <script>
+            (function () {
+                const slides = document.querySelectorAll('#heroSlideshow .hero-slide');
+                const dots = document.querySelectorAll('#heroDots .hero-dot');
+                let current = 0;
+                let timer;
+
+                function goTo(index) {
+                    slides[current].classList.remove('active');
+                    dots[current].classList.remove('active');
+                    current = (index + slides.length) % slides.length;
+                    slides[current].classList.add('active');
+                    dots[current].classList.add('active');
+                }
+
+                function startTimer() {
+                    timer = setInterval(() => goTo(current + 1), 6000);
+                }
+
+                function resetTimer() {
+                    clearInterval(timer);
+                    startTimer();
+                }
+
+                document.getElementById('heroNext').addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+                document.getElementById('heroPrev').addEventListener('click', () => { goTo(current - 1); resetTimer(); });
+
+                dots.forEach(dot => {
+                    dot.addEventListener('click', () => { goTo(parseInt(dot.dataset.index)); resetTimer(); });
+                });
+
+                startTimer();
+            })();
+        </script>
     </section>
 
     <!-- Sub-hero Information Bar -->
@@ -561,13 +746,13 @@
             <div class="row text-center">
                 <div class="col-6 col-md-3 mb-4 mb-md-0">
                     <div class="stat-item">
-                        <span class="stat-number" data-target="500" style="color:#121212; font-size: 2.5rem; font-weight: 800;">0</span><span class="stat-suffix" style="color:#41A648; font-size: 2.5rem; font-weight: 800;">+</span>
+                        <span class="stat-number" data-target="50" style="color:#121212; font-size: 2.5rem; font-weight: 800;">0</span><span class="stat-suffix" style="color:#41A648; font-size: 2.5rem; font-weight: 800;">+</span>
                         <p class="stat-label" style="color:#888; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; margin-top: 8px;">Assets Sold</p>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mb-4 mb-md-0">
                     <div class="stat-item">
-                        <span class="stat-number" data-target="1200" style="color:#121212; font-size: 2.5rem; font-weight: 800;">0</span><span class="stat-suffix" style="color:#41A648; font-size: 2.5rem; font-weight: 800;">+</span>
+                        <span class="stat-number" data-target="100" style="color:#121212; font-size: 2.5rem; font-weight: 800;">0</span><span class="stat-suffix" style="color:#41A648; font-size: 2.5rem; font-weight: 800;">+</span>
                         <p class="stat-label" style="color:#888; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; margin-top: 8px;">Registered Buyers</p>
                     </div>
                 </div>
@@ -579,7 +764,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="stat-item">
-                        <span class="stat-number" data-target="2" style="color:#121212; font-size: 2.5rem; font-weight: 800;">0</span><span class="stat-suffix" style="color:#41A648; font-size: 2.5rem; font-weight: 800;">B+</span>
+                        <span class="stat-number" data-target="1.2" style="color:#121212; font-size: 2.5rem; font-weight: 800;">0</span><span class="stat-suffix" style="color:#41A648; font-size: 2.5rem; font-weight: 800;">M+</span>
                         <p class="stat-label" style="color:#888; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; margin-top: 8px;">Rands in Transactions</p>
                     </div>
                 </div>

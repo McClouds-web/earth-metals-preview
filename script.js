@@ -55,9 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ─── STAT COUNTER ANIMATION ───────────────────────────────────────────────
     function animateCounter(el) {
-        const target = parseInt(el.getAttribute('data-target'), 10);
+        const targetAttr = el.getAttribute('data-target');
+        const target = parseFloat(targetAttr);
         const duration = 1800;
-        const step = Math.ceil(target / (duration / 16));
+        const step = target / (duration / 16);
         let current = 0;
         const timer = setInterval(() => {
             current += step;
@@ -65,7 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 current = target;
                 clearInterval(timer);
             }
-            el.textContent = current.toLocaleString();
+            const decimalPlaces = target % 1 !== 0 ? 1 : 0;
+            el.textContent = current.toLocaleString(undefined, { 
+                minimumFractionDigits: decimalPlaces,
+                maximumFractionDigits: decimalPlaces 
+            });
         }, 16);
     }
 
