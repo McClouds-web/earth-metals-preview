@@ -518,6 +518,16 @@
             width: 100%;
         }
 
+        /* Smaller hero titles */
+        .hero-slide .head_CTA h1 {
+            font-size: 2.1rem !important;
+            line-height: 1.25 !important;
+        }
+
+        @media (max-width: 767px) {
+            .hero-slide .head_CTA h1 { font-size: 1.5rem !important; }
+        }
+
         /* Slide nav dots */
         .hero-dots {
             position: absolute;
@@ -607,7 +617,7 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-7 d-flex align-items-center">
                             <div class="head_CTA">
-                                <h1 class="white mb-4">Buy and Sell Commercial Vehicles Across SADC—Faster, Smarter, at Market Price</h1>
+                                <h1 class="white mb-4">Buy and Sell Commercial Vehicles Across SADC: Faster, Smarter, at Market Price</h1>
                                 <p class="mb-5 white font_400" style="max-width: 620px; font-size: 1.15rem; line-height: 1.6; opacity: 0.9;">Powered from South Africa, Earth Metals connects quality vehicles and equipment from OEMs, dealers, and financial institutions with verified buyers across Zimbabwe, Botswana, Namibia, Zambia, and the broader SADC region.</p>
                                 <div class="d-flex flex-wrap align-items-center hero-btn-container" style="gap: 20px; margin-top: 40px;">
                                     <a class="em-btn em-btn-seller" href="site/register.html?type=seller">I'm a Seller</a>
@@ -625,7 +635,7 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-7 d-flex align-items-center">
                             <div class="head_CTA">
-                                <h1 class="white mb-4">Your Next Fleet Acquisition Starts Here—Inspected, Verified, Ready to Work</h1>
+                                <h1 class="white mb-4">Your Next Fleet Acquisition: Inspected, Verified, Ready to Work</h1>
                                 <p class="mb-5 white font_400" style="max-width: 620px; font-size: 1.15rem; line-height: 1.6; opacity: 0.9;">From tankers and prime movers to specialised commercial vehicles, Earth Metals gives logistics operators, fleet managers, and procurement teams direct access to quality assets at transparent, market-driven prices across Southern Africa.</p>
                                 <div class="d-flex flex-wrap align-items-center hero-btn-container" style="gap: 20px; margin-top: 40px;">
                                     <a class="em-btn em-btn-seller" href="site/register.html?type=seller">I'm a Seller</a>
@@ -665,7 +675,7 @@
                 }
 
                 function startTimer() {
-                    timer = setInterval(() => goTo(current + 1), 6000);
+                    timer = setInterval(() => goTo(current + 1), 5000);
                 }
 
                 function resetTimer() {
