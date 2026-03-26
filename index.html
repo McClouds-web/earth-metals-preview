@@ -603,94 +603,91 @@
         .search-area {
             position: relative;
             z-index: 25;
-            margin-top: -80px; /* Floating over hero bottom */
-            padding-bottom: 20px;
+            margin-top: 0; /* Directly under hero */
+            padding: 40px 0;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
         }
 
         .search-container {
             background: #ffffff;
-            padding: 35px;
+            padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 15px 45px rgba(0,0,0,0.12);
-            border: 1px solid #efefef;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
         }
 
         .search-form {
             display: grid;
-            grid-template-columns: repeat(5, 1fr) auto;
-            gap: 20px;
+            grid-template-columns: repeat(4, 1fr) auto;
+            gap: 15px;
             align-items: flex-end;
         }
 
         .search-group {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
         }
 
         .search-group label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 800;
             color: #999;
             text-transform: uppercase;
-            letter-spacing: 1.2px;
+            letter-spacing: 1px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
         }
 
         .search-control {
             width: 100%;
-            height: 50px;
-            padding: 0 18px;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-            background: #fdfdfd;
-            font-size: 0.95rem;
+            height: 48px;
+            padding: 0 15px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background: #fff;
+            font-size: 0.9rem;
             color: #121212;
             font-weight: 500;
-            transition: all 0.3s ease;
+            cursor: pointer;
         }
 
         .search-control:focus {
             outline: none;
             border-color: var(--primary-green);
-            background: #fff;
-            box-shadow: 0 0 0 4px rgba(65, 166, 72, 0.08);
         }
 
         .search-action-btn {
-            height: 50px;
+            height: 48px;
             background: var(--primary-green);
             color: #fff;
             border: none;
-            border-radius: 8px;
-            padding: 0 30px;
+            border-radius: 6px;
+            padding: 0 25px;
             font-weight: 800;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
             text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
+            font-size: 0.85rem;
         }
 
         .search-action-btn:hover {
             background: #358f3d;
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(65, 166, 72, 0.3);
         }
 
         @media (max-width: 1200px) {
-            .search-form { grid-template-columns: repeat(3, 1fr); }
-            .search-action-btn { grid-column: span 3; }
+            .search-form { grid-template-columns: repeat(2, 1fr); }
+            .search-action-btn { grid-column: span 2; }
         }
 
         @media (max-width: 768px) {
-            .search-area { margin-top: 0; padding-top: 40px; }
             .search-form { grid-template-columns: 1fr; }
             .search-action-btn { grid-column: span 1; }
         }
@@ -765,60 +762,70 @@
             </div>
         </div>
 
-        <!-- FLOATING SEARCH BAR AREA -->
+        <!-- SEARCH BAR AREA (Under Hero) -->
         <div class="search-area">
             <div class="custom_container">
                 <div class="search-container">
                     <form action="site/register.html" method="GET" class="search-form">
-                        <!-- Brand Search -->
+                        <!-- Category Picker -->
                         <div class="search-group">
-                            <label><span class="iconify" data-icon="mdi:tag-outline"></span> Brand / Model</label>
-                            <input type="text" class="search-control" placeholder="e.g. Volvo FH, CAT 320...">
-                        </div>
-
-                        <!-- Category -->
-                        <div class="search-group">
-                            <label><span class="iconify" data-icon="mdi:truck-outline"></span> Asset Type</label>
+                            <label><span class="iconify" data-icon="mdi:truck-outline"></span> Category</label>
                             <select class="search-control">
-                                <option value="">All Categories</option>
-                                <option value="trucks">Trucks & Prime Movers</option>
-                                <option value="mining">Mining Equipment</option>
-                                <option value="construction">Construction Plant</option>
-                                <option value="tankers">Trailers & Tankers</option>
-                                <option value="other">Specialised Fleet</option>
+                                <option value="">Select Category</option>
+                                <option value="mining">Mining & Resources</option>
+                                <option value="construction">Construction & Plant</option>
+                                <option value="agri">Agriculture</option>
+                                <option value="logistics">Logistics & Transport</option>
+                                <option value="dealers">Fleet Dealer Stock</option>
                             </select>
                         </div>
 
-                        <!-- Country -->
+                        <!-- Year Filter -->
                         <div class="search-group">
-                            <label><span class="iconify" data-icon="mdi:map-marker-outline"></span> Country</label>
+                            <label><span class="iconify" data-icon="mdi:calendar-range"></span> Year</label>
                             <select class="search-control">
-                                <option value="">SADC Regions</option>
-                                <option value="za">South Africa</option>
-                                <option value="zw">Zimbabwe</option>
-                                <option value="bw">Botswana</option>
-                                <option value="na">Namibia</option>
-                                <option value="zm">Zambia</option>
+                                <option value="">All Years</option>
+                                <option value="2024">2024 / New</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="pre2020">Before 2020</option>
                             </select>
                         </div>
 
-                        <!-- Kms / Hours -->
+                        <!-- Usage Dropdown -->
                         <div class="search-group">
-                            <label><span class="iconify" data-icon="mdi:speedometer"></span> Max KM / Hours</label>
-                            <input type="number" class="search-control" placeholder="Any Usage">
+                            <label><span class="iconify" data-icon="mdi:speedometer"></span> KMs / Hours</label>
+                            <select class="search-control">
+                                <option value="">Any Usage</option>
+                                <option value="low">Low (0 - 50k KM)</option>
+                                <option value="mid">Mid (50k - 150k KM)</option>
+                                <option value="high">High (150k+ KM)</option>
+                                <option value="hours">Industrial (by Hours)</option>
+                            </select>
                         </div>
 
-                        <!-- Price Range -->
+                        <!-- Condition -->
                         <div class="search-group">
-                            <label><span class="iconify" data-icon="mdi:currency-usd"></span> Max Price</label>
-                            <input type="number" class="search-control" placeholder="Any Price">
+                            <label><span class="iconify" data-icon="mdi:shield-check-outline"></span> Condition</label>
+                            <select class="search-control">
+                                <option value="">All Conditions</option>
+                                <option value="new">Near New / Demo</option>
+                                <option value="exc">Excellent (Verified)</option>
+                                <option value="good">Good (Ready to Work)</option>
+                                <option value="fair">Fair (Fleet Service)</option>
+                            </select>
                         </div>
 
                         <!-- Search Button -->
                         <button type="submit" class="search-action-btn">
-                            <span class="iconify" data-icon="mdi:magnify"></span> Search Auctions
+                            <span class="iconify" data-icon="mdi:magnify"></span> Find Auctions
                         </button>
                     </form>
+                    <div class="mt-3 text-center">
+                        <small style="color: #999; font-weight: 600;"><span class="iconify" data-icon="mdi:information-outline"></span> All trucks and heavy equipment are sourced and sold from **South Africa** for regional collection.</small>
+                    </div>
                 </div>
             </div>
         </div>
