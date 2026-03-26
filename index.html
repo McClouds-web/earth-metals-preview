@@ -598,6 +598,102 @@
             .hero-slideshow { height: 580px; }
             .hero-arrow { display: none; }
         }
+
+        /* MARKETPLACE SEARCH AREA */
+        .search-area {
+            position: relative;
+            z-index: 25;
+            margin-top: -80px; /* Floating over hero bottom */
+            padding-bottom: 20px;
+        }
+
+        .search-container {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.12);
+            border: 1px solid #efefef;
+        }
+
+        .search-form {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr) auto;
+            gap: 20px;
+            align-items: flex-end;
+        }
+
+        .search-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .search-group label {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .search-control {
+            width: 100%;
+            height: 50px;
+            padding: 0 18px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            background: #fdfdfd;
+            font-size: 0.95rem;
+            color: #121212;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .search-control:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            background: #fff;
+            box-shadow: 0 0 0 4px rgba(65, 166, 72, 0.08);
+        }
+
+        .search-action-btn {
+            height: 50px;
+            background: var(--primary-green);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 0 30px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .search-action-btn:hover {
+            background: #358f3d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(65, 166, 72, 0.3);
+        }
+
+        @media (max-width: 1200px) {
+            .search-form { grid-template-columns: repeat(3, 1fr); }
+            .search-action-btn { grid-column: span 3; }
+        }
+
+        @media (max-width: 768px) {
+            .search-area { margin-top: 0; padding-top: 40px; }
+            .search-form { grid-template-columns: 1fr; }
+            .search-action-btn { grid-column: span 1; }
+        }
     </style>
 
     <section id="home" class="grouping dark-bg" style="padding:0; position:relative;">
@@ -666,6 +762,64 @@
                 <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
                 <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
                 <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+
+        <!-- FLOATING SEARCH BAR AREA -->
+        <div class="search-area">
+            <div class="custom_container">
+                <div class="search-container">
+                    <form action="site/register.html" method="GET" class="search-form">
+                        <!-- Brand Search -->
+                        <div class="search-group">
+                            <label><span class="iconify" data-icon="mdi:tag-outline"></span> Brand / Model</label>
+                            <input type="text" class="search-control" placeholder="e.g. Volvo FH, CAT 320...">
+                        </div>
+
+                        <!-- Category -->
+                        <div class="search-group">
+                            <label><span class="iconify" data-icon="mdi:truck-outline"></span> Asset Type</label>
+                            <select class="search-control">
+                                <option value="">All Categories</option>
+                                <option value="trucks">Trucks & Prime Movers</option>
+                                <option value="mining">Mining Equipment</option>
+                                <option value="construction">Construction Plant</option>
+                                <option value="tankers">Trailers & Tankers</option>
+                                <option value="other">Specialised Fleet</option>
+                            </select>
+                        </div>
+
+                        <!-- Country -->
+                        <div class="search-group">
+                            <label><span class="iconify" data-icon="mdi:map-marker-outline"></span> Country</label>
+                            <select class="search-control">
+                                <option value="">SADC Regions</option>
+                                <option value="za">South Africa</option>
+                                <option value="zw">Zimbabwe</option>
+                                <option value="bw">Botswana</option>
+                                <option value="na">Namibia</option>
+                                <option value="zm">Zambia</option>
+                            </select>
+                        </div>
+
+                        <!-- Kms / Hours -->
+                        <div class="search-group">
+                            <label><span class="iconify" data-icon="mdi:speedometer"></span> Max KM / Hours</label>
+                            <input type="number" class="search-control" placeholder="Any Usage">
+                        </div>
+
+                        <!-- Price Range -->
+                        <div class="search-group">
+                            <label><span class="iconify" data-icon="mdi:currency-usd"></span> Max Price</label>
+                            <input type="number" class="search-control" placeholder="Any Price">
+                        </div>
+
+                        <!-- Search Button -->
+                        <button type="submit" class="search-action-btn">
+                            <span class="iconify" data-icon="mdi:magnify"></span> Search Auctions
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
 
