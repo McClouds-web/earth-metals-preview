@@ -274,41 +274,51 @@
         }
 
         .brand-pill {
-            background: #fff;
-            padding: 10px 25px;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 700;
-            color: #121212;
+            flex-shrink: 0;
+            background: #f7f8fa;
+            border: 1px solid #eee;
+            padding: 8px 20px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
-            gap: 15px;
-            white-space: nowrap;
-            border: 1px solid #f0f0f0;
+            gap: 10px;
+            color: var(--text-grey);
+            font-weight: 500;
+            font-size: 0.85rem;
             transition: all 0.3s ease;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-            margin: 0 10px;
+            white-space: nowrap;
         }
 
         .brand-pill:hover {
-            border-color: var(--primary-green);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            background: white;
+            border-color: #ddd;
+            color: var(--dark-grey) !important;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
         }
 
-        .brand-logo-img {
+        .brand-logo-hex {
             width: 32px;
             height: 32px;
-            object-fit: contain;
-            filter: grayscale(1);
-            opacity: 0.7;
-            transition: all 0.3s ease;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--dark-grey);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
         }
 
-        .brand-pill:hover .brand-logo-img {
-            filter: grayscale(0);
-            opacity: 1;
+        /* Visibility Fix for Buyer Button on Light background */
+        .light-bg .em-btn-buyer {
+            color: var(--primary-green) !important;
+            border-color: var(--primary-green) !important;
+        }
+        .light-bg .em-btn-buyer:hover {
+            background-color: var(--primary-green) !important;
+            color: #ffffff !important;
         }
     </style>
 
@@ -1085,8 +1095,56 @@
                             <div class="solution-list-text"><strong>Transparent Auctions</strong> Benefit from a clear, structured bidding process with no hidden costs.</div>
                         </div>
                         <div class="mt-4">
-                            <a href="site/register.html" class="em-btn em-btn-buyer" style="display: block; text-align: center;">Browse Auctions</a>
+                            <a href="site/register.html" class="em-btn em-btn-seller" style="display: block; text-align: center;">Browse Auctions</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION (Moved Up for better flow) -->
+    <section style="padding: 100px 0; background-color: #fcfcfc; border-top: 1px solid #f0f0f0;">
+        <div class="custom_container">
+            <div class="text-center mb-5">
+                <h2>How To <span class="underlined">Trade</span> on Earth Metals</h2>
+                <p style="max-width: 600px; margin: 0 auto; color: #666;">A structured, secure, and transparent cross-border bidding environment.</p>
+            </div>
+            
+            <div class="row mt-5">
+                <!-- Step 1 -->
+                <div class="col-md-4 mb-4 text-center">
+                    <div style="font-size: 3rem; color: var(--primary-green); opacity: 0.2; position: absolute; left: 50%; transform: translateX(-50%) translateY(-20px); font-weight: 900; z-index: 1;">01</div>
+                    <div style="position: relative; z-index: 2;">
+                        <div style="width: 80px; height: 80px; background: #fff; border: 1px solid #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+                            <span class="iconify" data-icon="mdi:account-plus-outline" style="font-size: 2rem; color: var(--primary-green);"></span>
+                        </div>
+                        <h4 class="mb-3">Register & Vetting</h4>
+                        <p style="color: #666; font-size: 0.95rem;">Join our network of professional buyers and sellers. Quick verification ensures a trusted trading floor.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-md-4 mb-4 text-center">
+                    <div style="font-size: 3rem; color: var(--primary-green); opacity: 0.2; position: absolute; left: 50%; transform: translateX(-50%) translateY(-20px); font-weight: 900; z-index: 1;">02</div>
+                    <div style="position: relative; z-index: 2;">
+                        <div style="width: 80px; height: 80px; background: #fff; border: 1px solid #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+                            <span class="iconify" data-icon="mdi:magnify-scan" style="font-size: 2rem; color: var(--primary-green);"></span>
+                        </div>
+                        <h4 class="mb-3">Inspect & Bid</h4>
+                        <p style="color: #666; font-size: 0.95rem;">Access 100+ point inspection reports and HD galleries before placing your transparent, market-driven bid.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-md-4 mb-4 text-center">
+                    <div style="font-size: 3rem; color: var(--primary-green); opacity: 0.2; position: absolute; left: 50%; transform: translateX(-50%) translateY(-20px); font-weight: 900; z-index: 1;">03</div>
+                    <div style="position: relative; z-index: 2;">
+                        <div style="width: 80px; height: 80px; background: #fff; border: 1px solid #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+                            <span class="iconify" data-icon="mdi:truck-check-outline" style="font-size: 2rem; color: var(--primary-green);"></span>
+                        </div>
+                        <h4 class="mb-3">Secure Settlement</h4>
+                        <p style="color: #666; font-size: 0.95rem;">Once the hammer drops, enjoy clear documentation and logistics assistance for cross-border collection.</p>
                     </div>
                 </div>
             </div>
@@ -1376,53 +1434,7 @@
                 </div>
             </section>
 
-            <!-- HOW IT WORKS SECTION -->
-            <section style="padding: 100px 0; background-color: #fcfcfc; border-top: 1px solid #f0f0f0;">
-                <div class="custom_container">
-                    <div class="text-center mb-5">
-                        <h2>How To <span class="underlined">Trade</span> on Earth Metals</h2>
-                        <p style="max-width: 600px; margin: 0 auto; color: #666;">A structured, secure, and transparent cross-border bidding environment.</p>
-                    </div>
-                    
-                    <div class="row mt-5">
-                        <!-- Step 1 -->
-                        <div class="col-md-4 mb-4 text-center">
-                            <div style="font-size: 3rem; color: var(--primary-green); opacity: 0.2; position: absolute; left: 50%; transform: translateX(-50%) translateY(-20px); font-weight: 900; z-index: 1;">01</div>
-                            <div style="position: relative; z-index: 2;">
-                                <div style="width: 80px; height: 80px; background: #fff; border: 1px solid #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
-                                    <span class="iconify" data-icon="mdi:account-plus-outline" style="font-size: 2rem; color: var(--primary-green);"></span>
-                                </div>
-                                <h4 class="mb-3">Register & Vetting</h4>
-                                <p style="color: #666; font-size: 0.95rem;">Join our network of professional buyers and sellers. Quick verification ensures a trusted trading floor.</p>
-                            </div>
-                        </div>
 
-                        <!-- Step 2 -->
-                        <div class="col-md-4 mb-4 text-center">
-                            <div style="font-size: 3rem; color: var(--primary-green); opacity: 0.2; position: absolute; left: 50%; transform: translateX(-50%) translateY(-20px); font-weight: 900; z-index: 1;">02</div>
-                            <div style="position: relative; z-index: 2;">
-                                <div style="width: 80px; height: 80px; background: #fff; border: 1px solid #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
-                                    <span class="iconify" data-icon="mdi:magnify-scan" style="font-size: 2rem; color: var(--primary-green);"></span>
-                                </div>
-                                <h4 class="mb-3">Inspect & Bid</h4>
-                                <p style="color: #666; font-size: 0.95rem;">Access 100+ point inspection reports and HD galleries before placing your transparent, market-driven bid.</p>
-                            </div>
-                        </div>
-
-                        <!-- Step 3 -->
-                        <div class="col-md-4 mb-4 text-center">
-                            <div style="font-size: 3rem; color: var(--primary-green); opacity: 0.2; position: absolute; left: 50%; transform: translateX(-50%) translateY(-20px); font-weight: 900; z-index: 1;">03</div>
-                            <div style="position: relative; z-index: 2;">
-                                <div style="width: 80px; height: 80px; background: #fff; border: 1px solid #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
-                                    <span class="iconify" data-icon="mdi:truck-check-outline" style="font-size: 2rem; color: var(--primary-green);"></span>
-                                </div>
-                                <h4 class="mb-3">Secure Settlement</h4>
-                                <p style="color: #666; font-size: 0.95rem;">Once the hammer drops, enjoy clear documentation and logistics assistance for cross-border collection.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <!-- Asset Categories & Brands Slider -->
             <section style="padding: 100px 0;">
@@ -1490,48 +1502,48 @@
                 <div class="marquee-wrapper" id="brand-marquee">
                     <div class="marquee-container reverse">
                         <!-- set 1 -->
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/volvo.com" alt="Volvo"> Volvo</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/mercedes-benz.com" alt="Mercedes-Benz"> Mercedes-Benz</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/scania.com" alt="Scania"> Scania</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/cat.com" alt="CAT"> CAT</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/komatsu.com" alt="Komatsu"> Komatsu</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/jcb.com" alt="JCB"> JCB</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/bell.co.za" alt="Bell"> Bell</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/liebherr.com" alt="Liebherr"> Liebherr</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/caseih.com" alt="Case IH"> Case IH</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/masseyferguson.com" alt="Massey Ferguson"> Ferguson</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/johndeere.com" alt="John Deere"> John Deere</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/hitachi.com" alt="Hitachi"> Hitachi</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/iveco.com" alt="IVECO"> IVECO</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/hinomotors.com" alt="Hino"> Hino</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/faw.com" alt="FAW"> FAW</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/isuzu.com" alt="Isuzu"> Isuzu</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/man.eu" alt="MAN"> MAN</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/doosan.com" alt="Doosan"> Doosan</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/bobcat.com" alt="Bobcat"> Bobcat</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/cummins.com" alt="Cummins"> Cummins</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">V</div> Volvo</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">M</div> Mercedes-Benz</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">S</div> Scania</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">C</div> CAT</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">K</div> Komatsu</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">J</div> JCB</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">B</div> Bell</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">L</div> Liebherr</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">C</div> Case IH</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">M</div> Ferguson</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">J</div> John Deere</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">H</div> Hitachi</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">I</div> IVECO</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">H</div> Hino</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">F</div> FAW</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">I</div> Isuzu</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">M</div> MAN</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">D</div> Doosan</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">B</div> Bobcat</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">C</div> Cummins</div>
                         
                         <!-- Duplicated set for seamless loop -->
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/volvo.com" alt="Volvo"> Volvo</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/mercedes-benz.com" alt="Mercedes-Benz"> Mercedes-Benz</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/scania.com" alt="Scania"> Scania</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/cat.com" alt="CAT"> CAT</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/komatsu.com" alt="Komatsu"> Komatsu</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/jcb.com" alt="JCB"> JCB</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/bell.co.za" alt="Bell"> Bell</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/liebherr.com" alt="Liebherr"> Liebherr</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/caseih.com" alt="Case IH"> Case IH</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/masseyferguson.com" alt="Massey Ferguson"> Ferguson</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/johndeere.com" alt="John Deere"> John Deere</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/hitachi.com" alt="Hitachi"> Hitachi</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/iveco.com" alt="IVECO"> IVECO</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/hinomotors.com" alt="Hino"> Hino</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/faw.com" alt="FAW"> FAW</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/isuzu.com" alt="Isuzu"> Isuzu</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/man.eu" alt="MAN"> MAN</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/doosan.com" alt="Doosan"> Doosan</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/bobcat.com" alt="Bobcat"> Bobcat</div>
-                        <div class="brand-pill"><img class="brand-logo-img" src="https://logo.clearbit.com/cummins.com" alt="Cummins"> Cummins</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">V</div> Volvo</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">M</div> Mercedes-Benz</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">S</div> Scania</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">C</div> CAT</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">K</div> Komatsu</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">J</div> JCB</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">B</div> Bell</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">L</div> Liebherr</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">C</div> Case IH</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">M</div> Ferguson</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">J</div> John Deere</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">H</div> Hitachi</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">I</div> IVECO</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">H</div> Hino</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">F</div> FAW</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">I</div> Isuzu</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">M</div> MAN</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">D</div> Doosan</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">B</div> Bobcat</div>
+                        <div class="brand-pill"><div class="brand-logo-hex">C</div> Cummins</div>
                     </div>
                 </div>
                 </div>
